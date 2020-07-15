@@ -4,7 +4,7 @@
 
 ```ts
 
-import { SerializedStyles } from '@emotion/core';
+import { SerializedStyles } from '@emotion/react';
 
 // @public
 export const borderInlineEndWidth: (value: string) => SerializedStyles;
