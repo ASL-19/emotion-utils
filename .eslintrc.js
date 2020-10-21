@@ -1,5 +1,5 @@
 const eslintConfig = {
-  extends: ["@asl-19/eslint-config"],
+  extends: ["@asl-19/eslint-config", "@asl-19/eslint-config/react"],
   rules: {
     "no-restricted-imports": "off",
   },
