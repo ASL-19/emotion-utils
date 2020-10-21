@@ -2,12 +2,15 @@
   "cSpell.words": [
     "destructure",
     "heaslip",
+    "stylelint",
     "transpiled",
     "tsdoc",
-    "unscoped"
+    "unscoped",
+    "yalc"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
   "eslint.enable": true,
   "eslint.validate": [
@@ -26,5 +29,6 @@
     "LICENSE": true,
     "types/**/*": true,
     "yarn.lock": true
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
