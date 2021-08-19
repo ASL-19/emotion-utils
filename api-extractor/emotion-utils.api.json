@@ -172,7 +172,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!borderInlineEndWidth:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width | border-inline-end-width} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties | logical properties} aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width | border-inline-end-width} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native border-inline-end-width.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -198,7 +198,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!borderInlineStartWidth:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width | border-inline-start-width} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties | logical properties} aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width | border-inline-start-width} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native border-inline-start-width.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -328,7 +328,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!marginInlineEnd:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end | margin-inline-end} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end | margin-inline-end} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native margin-inline-end.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -354,7 +354,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!marginInlineStart:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start | margin-inline-start} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start | margin-inline-start} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with margin-inline-start.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -432,7 +432,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!paddingInlineEnd:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end | padding-inline-end} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end | padding-inline-end} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native padding-inline-end.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -458,7 +458,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!paddingInlineStart:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start | padding-inline-start} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start | padding-inline-start} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native padding-inline-start.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

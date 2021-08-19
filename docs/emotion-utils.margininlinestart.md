@@ -4,15 +4,15 @@
 
 ## marginInlineStart variable
 
-Equivalent to the [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start) CSS property.
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with margin-inline-start.
+> 
+
+Equivalent to the [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start) CSS property. \[DEPRECATED\]
 
 <b>Signature:</b>
 
 ```typescript
 marginInlineStart: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-

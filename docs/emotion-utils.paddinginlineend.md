@@ -4,15 +4,15 @@
 
 ## paddingInlineEnd variable
 
-Equivalent to the [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end) CSS property.
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with native padding-inline-end.
+> 
+
+Equivalent to the [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end) CSS property. \[DEPRECATED\]
 
 <b>Signature:</b>
 
 ```typescript
 paddingInlineEnd: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-
