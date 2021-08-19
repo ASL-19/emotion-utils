@@ -27,12 +27,13 @@
     "build-esm": "tsc --project tsconfig-esm.json",
     "build-check-and-lint": "npm-run-all -l -s build -p api-extractor:check eslint",
     "prepublishOnly": "npm run build",
-    "clean-dist": "rm -rf ./dist/",
+    "clean-dist": "rm -rf dist/*",
     "eslint": "eslint . --ext js,ts",
     "stylelint": "stylelint ./src/**/*.ts*"
   },
   "devDependencies": {
     "@asl-19/eslint-config": "^0.4.0",
+    "@asl-19/shared-package-configs": "^0.1.1",
     "@asl-19/stylelint-config": "^0.3.0",
     "@emotion/react": "^11.4.1",
     "@microsoft/api-documenter": "^7.13.39",
