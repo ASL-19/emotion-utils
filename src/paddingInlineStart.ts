@@ -8,19 +8,13 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with native padding-inline-start.
  * @public
  */
-const paddingInlineStart = (value: string): SerializedStyles => {
-  console.info(
-    "paddingInlineStart is deprecated due to pervasive browser support for the native padding-inline-start property. Please replace with padding-inline-start."
-  );
-
-  return css`
-    html[dir="ltr"] & {
-      padding-left: ${value};
-    }
-    html[dir="rtl"] & {
-      padding-right: ${value};
-    }
-  `;
-};
+const paddingInlineStart = (value: string): SerializedStyles => css`
+  html[dir="ltr"] & {
+    padding-left: ${value};
+  }
+  html[dir="rtl"] & {
+    padding-right: ${value};
+  }
+`;
 
 export default paddingInlineStart;
