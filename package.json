@@ -15,7 +15,7 @@
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "types/emotion-utils.public.d.ts",
+  "types": "types/emotion-utils.d.ts",
   "sideEffects": false,
   "scripts": {
     "api-extractor:check": "api-extractor run --verbose",
