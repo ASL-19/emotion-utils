@@ -8,19 +8,13 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with native padding-inline-end.
  * @public
  */
-const paddingInlineEnd = (value: string): SerializedStyles => {
-  console.info(
-    "paddingInlineEnd is deprecated due to pervasive browser support for the native padding-inline-end property. Please replace with padding-inline-end."
-  );
-
-  return css`
-    html[dir="ltr"] & {
-      padding-right: ${value};
-    }
-    html[dir="rtl"] & {
-      padding-left: ${value};
-    }
-  `;
-};
+const paddingInlineEnd = (value: string): SerializedStyles => css`
+  html[dir="ltr"] & {
+    padding-right: ${value};
+  }
+  html[dir="rtl"] & {
+    padding-left: ${value};
+  }
+`;
 
 export default paddingInlineEnd;

@@ -8,19 +8,13 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with margin-inline-start.
  * @public
  */
-const marginInlineStart = (value: string): SerializedStyles => {
-  console.info(
-    "marginInlineStart is deprecated due to pervasive browser support for the native margin-inline-start property. Please replace with margin-inline-start."
-  );
-
-  return css`
-    html[dir="ltr"] & {
-      margin-left: ${value};
-    }
-    html[dir="rtl"] & {
-      margin-right: ${value};
-    }
-  `;
-};
+const marginInlineStart = (value: string): SerializedStyles => css`
+  html[dir="ltr"] & {
+    margin-left: ${value};
+  }
+  html[dir="rtl"] & {
+    margin-right: ${value};
+  }
+`;
 
 export default marginInlineStart;
