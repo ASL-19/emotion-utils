@@ -4,15 +4,15 @@
 
 ## paddingInlineStart variable
 
-Equivalent to the [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start) CSS property.
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with native padding-inline-start.
+> 
+
+Equivalent to the [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start) CSS property. \[DEPRECATED\]
 
 <b>Signature:</b>
 
 ```typescript
 paddingInlineStart: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-

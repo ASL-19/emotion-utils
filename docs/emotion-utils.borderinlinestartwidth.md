@@ -4,15 +4,15 @@
 
 ## borderInlineStartWidth variable
 
-Equivalent to the [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width) CSS property.
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with native border-inline-start-width.
+> 
+
+Equivalent to the [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width) CSS property. \[DEPRECATED\]
 
 <b>Signature:</b>
 
 ```typescript
 borderInlineStartWidth: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties) aren’t pervasive enough to use on their own.
-

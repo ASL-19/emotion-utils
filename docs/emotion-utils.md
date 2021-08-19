@@ -10,16 +10,16 @@ A collection of Emotion utility functions.
 
 |  Variable | Description |
 |  --- | --- |
-|  [borderInlineEndWidth](./emotion-utils.borderinlineendwidth.md) | Equivalent to the [border-inline-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width) CSS property. |
-|  [borderInlineStartWidth](./emotion-utils.borderinlinestartwidth.md) | Equivalent to the [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width) CSS property. |
+|  [borderInlineEndWidth](./emotion-utils.borderinlineendwidth.md) | Equivalent to the [border-inline-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width) CSS property. \[DEPRECATED\] |
+|  [borderInlineStartWidth](./emotion-utils.borderinlinestartwidth.md) | Equivalent to the [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width) CSS property. \[DEPRECATED\] |
 |  [insetInlineEnd](./emotion-utils.insetinlineend.md) | Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property. |
 |  [insetInlineStart](./emotion-utils.insetinlinestart.md) | Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property. |
 |  [marginBlock](./emotion-utils.marginblock.md) | Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property. |
 |  [marginInline](./emotion-utils.margininline.md) | Equivalent to the [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline) CSS property. |
-|  [marginInlineEnd](./emotion-utils.margininlineend.md) | Equivalent to the [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end) CSS property. |
-|  [marginInlineStart](./emotion-utils.margininlinestart.md) | Equivalent to the [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start) CSS property. |
+|  [marginInlineEnd](./emotion-utils.margininlineend.md) | Equivalent to the [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end) CSS property. \[DEPRECATED\] |
+|  [marginInlineStart](./emotion-utils.margininlinestart.md) | Equivalent to the [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start) CSS property. \[DEPRECATED\] |
 |  [paddingBlock](./emotion-utils.paddingblock.md) | Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property. |
 |  [paddingInline](./emotion-utils.paddinginline.md) | Equivalent to the [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline) CSS property. |
-|  [paddingInlineEnd](./emotion-utils.paddinginlineend.md) | Equivalent to the [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end) CSS property. |
-|  [paddingInlineStart](./emotion-utils.paddinginlinestart.md) | Equivalent to the [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start) CSS property. |
+|  [paddingInlineEnd](./emotion-utils.paddinginlineend.md) | Equivalent to the [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end) CSS property. \[DEPRECATED\] |
+|  [paddingInlineStart](./emotion-utils.paddinginlinestart.md) | Equivalent to the [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start) CSS property. \[DEPRECATED\] |
 
