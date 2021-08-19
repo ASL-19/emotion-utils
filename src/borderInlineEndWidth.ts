@@ -3,13 +3,9 @@ import { css, SerializedStyles } from "@emotion/react";
 /**
  * Equivalent to the
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width|border-inline-end-width}
- * CSS property.
+ * CSS property. [DEPRECATED]
  *
- * @remarks
- * As of 2020-05
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties|logical properties}
- * aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with native border-inline-end-width.
  * @public
  */
 const borderInlineEndWidth = (value: string): SerializedStyles => css`

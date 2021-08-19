@@ -3,11 +3,9 @@ import { css, SerializedStyles } from "@emotion/react";
 /**
  * Equivalent to the
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start|padding-inline-start}
- * CSS property.
+ * CSS property. [DEPRECATED]
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with native padding-inline-start.
  * @public
  */
 const paddingInlineStart = (value: string): SerializedStyles => css`

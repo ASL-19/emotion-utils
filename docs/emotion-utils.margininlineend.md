@@ -4,15 +4,15 @@
 
 ## marginInlineEnd variable
 
-Equivalent to the [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end) CSS property.
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with native margin-inline-end.
+> 
+
+Equivalent to the [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end) CSS property. \[DEPRECATED\]
 
 <b>Signature:</b>
 
 ```typescript
 marginInlineEnd: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-
