@@ -9,9 +9,6 @@
   },
   "license": "GPL-3.0-or-later",
   "repository": "ASL-19/emotion-utils",
-  "engines": {
-    "node": ">= 12"
-  },
   "files": [
     "dist/**/*.js",
     "types/**/*.d.ts"
@@ -25,29 +22,29 @@
     "api-extractor:update": "api-extractor run --local --verbose",
     "api-documenter:update": "api-documenter markdown --input-folder ./api-extractor --output-folder ./docs",
     "build": "tsc -p tsconfig-cjs.json && tsc -p tsconfig-esm.json",
-    "build-and-update-api": "yarn build && yarn api-extractor:update && yarn api-documenter:update",
+    "build-and-update-api": "npm run build && npm run api-extractor:update && npm run api-documenter:update",
     "eslint": "eslint . --ext js,ts",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
     "stylelint": "stylelint ./src/**/*.ts*"
   },
   "dependencies": {},
   "devDependencies": {
-    "@asl-19/eslint-config": "^0.3.0",
-    "@asl-19/stylelint-config": "^0.1.5",
-    "@emotion/react": "^11.0.0-rc.0",
-    "@microsoft/api-documenter": "^7.9.15",
-    "@microsoft/api-extractor": "^7.10.4",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
-    "eslint": "^7.11.0",
-    "prettier": "^2.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "stylelint": "^13.7.2",
+    "@asl-19/eslint-config": "^0.4.0",
+    "@asl-19/stylelint-config": "^0.3.0",
+    "@emotion/react": "^11.4.1",
+    "@microsoft/api-documenter": "^7.13.39",
+    "@microsoft/api-extractor": "^7.18.5",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "stylelint": "^13.13.1",
     "stylelint-order": "^4.1.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.3.5"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.0.0-next.13"
+    "@emotion/react": "^11.0.0"
   }
 }

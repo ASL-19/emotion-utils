@@ -12,7 +12,6 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "eslint.enable": true,
   "eslint.validate": [
     "javascript",
     "typescript"
@@ -21,14 +20,15 @@
     "api-extractor.json": "jsonc"
   },
   "search.exclude": {
-    ".yarn/releases/**/*": true,
-    ".yarnrc": true,
     "api-extractor/**/*": true,
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
+    "package-lock.json": true,
     "types/**/*": true,
-    "yarn.lock": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[json]": {
+    "editor.formatOnSave": true
+  }
 }
