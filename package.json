@@ -34,7 +34,7 @@
   "devDependencies": {
     "@asl-19/eslint-config": "^0.4.0",
     "@asl-19/shared-package-configs": "^0.1.1",
-    "@asl-19/stylelint-config": "^0.3.0",
+    "@asl-19/stylelint-config": "^0.4.1",
     "@emotion/react": "^11.4.1",
     "@microsoft/api-documenter": "^7.13.39",
     "@microsoft/api-extractor": "^7.18.5",
@@ -45,8 +45,7 @@
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "stylelint": "^13.13.1",
-    "stylelint-order": "^4.1.0",
+    "stylelint": "^14.0.1",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
