@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.5",
-    "schemaVersion": 1004,
+    "toolVersion": "7.33.7",
+    "schemaVersion": 1010,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "@asl-19/emotion-utils!",
   "docComment": "/**\n * A collection of Emotion utility functions.\n *\n * @packageDocumentation\n */\n",
   "name": "@asl-19/emotion-utils",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@asl-19/emotion-utils!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Variable",
@@ -188,6 +191,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/borderInlineEndWidth.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "borderInlineEndWidth",
           "variableTypeTokenRange": {
@@ -214,6 +219,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/borderInlineStartWidth.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "borderInlineStartWidth",
           "variableTypeTokenRange": {
@@ -240,6 +247,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/insetInlineEnd.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "insetInlineEnd",
           "variableTypeTokenRange": {
@@ -266,6 +275,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/insetInlineStart.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "insetInlineStart",
           "variableTypeTokenRange": {
@@ -292,6 +303,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/marginBlock.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "marginBlock",
           "variableTypeTokenRange": {
@@ -318,6 +331,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/marginInline.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "marginInline",
           "variableTypeTokenRange": {
@@ -344,6 +359,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/marginInlineEnd.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "marginInlineEnd",
           "variableTypeTokenRange": {
@@ -370,6 +387,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/marginInlineStart.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "marginInlineStart",
           "variableTypeTokenRange": {
@@ -396,6 +415,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/paddingBlock.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "paddingBlock",
           "variableTypeTokenRange": {
@@ -422,6 +443,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/paddingInline.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "paddingInline",
           "variableTypeTokenRange": {
@@ -448,6 +471,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/paddingInlineEnd.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "paddingInlineEnd",
           "variableTypeTokenRange": {
@@ -474,6 +499,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/paddingInlineStart.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "paddingInlineStart",
           "variableTypeTokenRange": {
