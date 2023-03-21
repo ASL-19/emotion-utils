@@ -6,7 +6,7 @@
 
 Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 insetInlineEnd: (value: string) => SerializedStyles

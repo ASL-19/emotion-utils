@@ -11,7 +11,7 @@
 
 Equivalent to the [border-inline-end-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width) CSS property. \[DEPRECATED\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 borderInlineEndWidth: (value: string) => SerializedStyles

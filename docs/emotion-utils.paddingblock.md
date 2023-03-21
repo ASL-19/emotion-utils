@@ -6,7 +6,7 @@
 
 Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 paddingBlock: (value: string) => SerializedStyles

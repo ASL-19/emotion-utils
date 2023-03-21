@@ -11,7 +11,7 @@
 
 Equivalent to the [padding-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start) CSS property. \[DEPRECATED\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 paddingInlineStart: (value: string) => SerializedStyles

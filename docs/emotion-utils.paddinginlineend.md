@@ -11,7 +11,7 @@
 
 Equivalent to the [padding-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end) CSS property. \[DEPRECATED\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 paddingInlineEnd: (value: string) => SerializedStyles

@@ -11,7 +11,7 @@
 
 Equivalent to the [margin-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start) CSS property. \[DEPRECATED\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 marginInlineStart: (value: string) => SerializedStyles

@@ -11,7 +11,7 @@
 
 Equivalent to the [border-inline-start-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width) CSS property. \[DEPRECATED\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 borderInlineStartWidth: (value: string) => SerializedStyles

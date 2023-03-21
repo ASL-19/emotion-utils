@@ -11,7 +11,7 @@
 
 Equivalent to the [margin-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end) CSS property. \[DEPRECATED\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 marginInlineEnd: (value: string) => SerializedStyles

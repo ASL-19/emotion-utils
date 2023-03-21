@@ -2,6 +2,7 @@
   "cSpell.words": [
     "destructure",
     "heaslip",
+    "rushstack",
     "stylelint",
     "transpiled",
     "tsdoc",
@@ -12,10 +13,21 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "eslint.validate": ["javascript", "typescript"],
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
   "files.associations": {
     "api-extractor.json": "jsonc"
   },
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "redhat.telemetry.enabled": false,
+  "rewrap.reformat": true,
+  "rewrap.wrappingColumn": 80,
   "search.exclude": {
     "api-extractor/**/*": true,
     "CHANGELOG": true,
@@ -24,9 +36,13 @@
     "package-lock.json": true,
     "types/**/*": true
   },
-  "stylelint.validate": ["typescript", "typescriptreact"],
+  "stylelint.validate": [
+    "typescript",
+    "typescriptreact"
+  ],
   "typescript.tsdk": "node_modules/typescript/lib",
-  "[json]": {
+  "[javascript][json][jsonc][markdown][typescript][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   }
 }

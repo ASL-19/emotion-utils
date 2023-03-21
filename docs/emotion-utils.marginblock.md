@@ -6,7 +6,7 @@
 
 Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 marginBlock: (value: string) => SerializedStyles

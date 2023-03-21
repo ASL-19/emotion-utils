@@ -6,7 +6,7 @@
 
 Equivalent to the [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 paddingInline: (value: string) => SerializedStyles

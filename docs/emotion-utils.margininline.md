@@ -6,7 +6,7 @@
 
 Equivalent to the [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 marginInline: (value: string) => SerializedStyles

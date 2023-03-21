@@ -6,7 +6,7 @@
 
 Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 insetInlineStart: (value: string) => SerializedStyles
