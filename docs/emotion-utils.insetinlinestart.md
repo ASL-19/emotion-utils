@@ -4,6 +4,11 @@
 
 ## insetInlineStart variable
 
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with `inset-inline-start`<!-- -->.
+> 
+
 Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property.
 
 **Signature:**
@@ -11,8 +16,3 @@ Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/
 ```typescript
 insetInlineStart: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-

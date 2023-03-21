@@ -5,9 +5,7 @@ import { css, SerializedStyles } from "@emotion/react";
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline|margin-inline}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `margin-inline`.
  * @public
  */
 const marginInline = (value: string): SerializedStyles => css`

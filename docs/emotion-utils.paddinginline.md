@@ -4,6 +4,11 @@
 
 ## paddingInline variable
 
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with `padding-inline`<!-- -->.
+> 
+
 Equivalent to the [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline) CSS property.
 
 **Signature:**
@@ -11,8 +16,3 @@ Equivalent to the [padding-inline](https://developer.mozilla.org/en-US/docs/Web/
 ```typescript
 paddingInline: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-

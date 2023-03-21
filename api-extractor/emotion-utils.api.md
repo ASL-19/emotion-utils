@@ -7,39 +7,21 @@
 import { SerializedStyles } from '@emotion/react';
 
 // @public @deprecated
-export const borderInlineEndWidth: (value: string) => SerializedStyles;
-
-// @public @deprecated
-export const borderInlineStartWidth: (value: string) => SerializedStyles;
-
-// @public
 export const insetInlineEnd: (value: string) => SerializedStyles;
 
-// @public
+// @public @deprecated
 export const insetInlineStart: (value: string) => SerializedStyles;
 
-// @public
+// @public @deprecated
 export const marginBlock: (value: string) => SerializedStyles;
 
-// @public
+// @public @deprecated
 export const marginInline: (value: string) => SerializedStyles;
 
 // @public @deprecated
-export const marginInlineEnd: (value: string) => SerializedStyles;
-
-// @public @deprecated
-export const marginInlineStart: (value: string) => SerializedStyles;
-
-// @public
 export const paddingBlock: (value: string) => SerializedStyles;
 
-// @public
+// @public @deprecated
 export const paddingInline: (value: string) => SerializedStyles;
-
-// @public @deprecated
-export const paddingInlineEnd: (value: string) => SerializedStyles;
-
-// @public @deprecated
-export const paddingInlineStart: (value: string) => SerializedStyles;
 
 ```

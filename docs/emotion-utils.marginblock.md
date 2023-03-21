@@ -4,6 +4,11 @@
 
 ## marginBlock variable
 
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with `margin-block`<!-- -->.
+> 
+
 Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property.
 
 **Signature:**
@@ -11,8 +16,3 @@ Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CS
 ```typescript
 marginBlock: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-
