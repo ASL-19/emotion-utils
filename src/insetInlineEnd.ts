@@ -8,13 +8,14 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with `inset-inline-end`.
  * @public
  */
-const insetInlineEnd = (value: string): SerializedStyles => css`
-  html[dir="ltr"] & {
-    right: ${value};
-  }
-  html[dir="rtl"] & {
-    left: ${value};
-  }
-`;
+const insetInlineEnd = (value: string): SerializedStyles =>
+  css({
+    'html[dir="ltr"] &': {
+      right: value,
+    },
+    'html[dir="rtl"] &': {
+      left: value,
+    },
+  });
 
 export default insetInlineEnd;

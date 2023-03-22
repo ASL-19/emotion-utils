@@ -8,9 +8,10 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with `padding-block`.
  * @public
  */
-const paddingBlock = (value: string): SerializedStyles => css`
-  padding-top: ${value};
-  padding-bottom: ${value};
-`;
+const paddingBlock = (value: string): SerializedStyles =>
+  css({
+    paddingBottom: value,
+    paddingTop: value,
+  });
 
 export default paddingBlock;

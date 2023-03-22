@@ -10,8 +10,7 @@
     "yalc"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.eslint": true
   },
   "eslint.validate": [
     "javascript",
@@ -36,10 +35,6 @@
     "package-lock.json": true,
     "types/**/*": true
   },
-  "stylelint.validate": [
-    "typescript",
-    "typescriptreact"
-  ],
   "typescript.tsdk": "node_modules/typescript/lib",
   "[javascript][json][jsonc][markdown][typescript][yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",

@@ -8,9 +8,10 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with `margin-inline`.
  * @public
  */
-const marginInline = (value: string): SerializedStyles => css`
-  margin-right: ${value};
-  margin-left: ${value};
-`;
+const marginInline = (value: string): SerializedStyles =>
+  css({
+    marginLeft: value,
+    marginRight: value,
+  });
 
 export default marginInline;

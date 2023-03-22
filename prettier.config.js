@@ -1,5 +1,6 @@
 const prettierConfig = {
   trailingComma: "all",
+  // eslint-disable-next-line sort-keys-fix/sort-keys-fix
   overrides: [
     {
       files: ["*.json"],

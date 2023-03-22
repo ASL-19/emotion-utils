@@ -8,8 +8,18 @@ const eslintConfig = {
     "@asl-19/eslint-config/react",
     "@asl-19/eslint-config/typescript",
   ],
+  plugins: ["sort-keys-fix"],
   rules: {
+    "@emotion/syntax-preference": ["warn", "object"],
     "no-restricted-imports": "off",
+    "sort-keys-fix/sort-keys-fix": [
+      "warn",
+      "asc",
+      {
+        caseSensitive: false,
+        natural: true,
+      },
+    ],
   },
 };
 

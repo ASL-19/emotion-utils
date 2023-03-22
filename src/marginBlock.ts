@@ -8,9 +8,10 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with `margin-block`.
  * @public
  */
-const marginBlock = (value: string): SerializedStyles => css`
-  margin-top: ${value};
-  margin-bottom: ${value};
-`;
+const marginBlock = (value: string): SerializedStyles =>
+  css({
+    marginBottom: value,
+    marginTop: value,
+  });
 
 export default marginBlock;

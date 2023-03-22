@@ -8,9 +8,10 @@ import { css, SerializedStyles } from "@emotion/react";
  * @deprecated Should be replaced with `padding-inline`.
  * @public
  */
-const paddingInline = (value: string): SerializedStyles => css`
-  padding-right: ${value};
-  padding-left: ${value};
-`;
+const paddingInline = (value: string): SerializedStyles =>
+  css({
+    paddingLeft: value,
+    paddingRight: value,
+  });
 
 export default paddingInline;
