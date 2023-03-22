@@ -4,15 +4,15 @@
 
 ## insetInlineEnd variable
 
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with `inset-inline-end`<!-- -->.
+> 
+
 Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 insetInlineEnd: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties) aren’t pervasive enough to use on their own.
-

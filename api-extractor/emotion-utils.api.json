@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.5",
-    "schemaVersion": 1004,
+    "toolVersion": "7.34.4",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,75 +156,26 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "@asl-19/emotion-utils!",
   "docComment": "/**\n * A collection of Emotion utility functions.\n *\n * @packageDocumentation\n */\n",
   "name": "@asl-19/emotion-utils",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@asl-19/emotion-utils!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!borderInlineEndWidth:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width | border-inline-end-width} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native border-inline-end-width.\n *\n * @public\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "borderInlineEndWidth: "
-            },
-            {
-              "kind": "Content",
-              "text": "(value: string) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "SerializedStyles",
-              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "borderInlineEndWidth",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!borderInlineStartWidth:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width | border-inline-start-width} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native border-inline-start-width.\n *\n * @public\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "borderInlineStartWidth: "
-            },
-            {
-              "kind": "Content",
-              "text": "(value: string) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "SerializedStyles",
-              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "borderInlineStartWidth",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!insetInlineEnd:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end | inset-inline-end} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties | logical properties} aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end | inset-inline-end} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `inset-inline-end`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -240,6 +191,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/insetInlineEnd.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "insetInlineEnd",
           "variableTypeTokenRange": {
@@ -250,7 +203,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!insetInlineStart:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start | inset-inline-start} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start | inset-inline-start} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `inset-inline-start`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -266,6 +219,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/insetInlineStart.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "insetInlineStart",
           "variableTypeTokenRange": {
@@ -276,7 +231,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!marginBlock:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block | margin-block} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block | margin-block} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `margin-block`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -292,6 +247,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/marginBlock.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "marginBlock",
           "variableTypeTokenRange": {
@@ -302,7 +259,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!marginInline:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline | margin-inline} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline | margin-inline} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `margin-inline`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -318,6 +275,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/marginInline.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "marginInline",
           "variableTypeTokenRange": {
@@ -327,60 +286,8 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!marginInlineEnd:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end | margin-inline-end} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native margin-inline-end.\n *\n * @public\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "marginInlineEnd: "
-            },
-            {
-              "kind": "Content",
-              "text": "(value: string) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "SerializedStyles",
-              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "marginInlineEnd",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!marginInlineStart:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start | margin-inline-start} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with margin-inline-start.\n *\n * @public\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "marginInlineStart: "
-            },
-            {
-              "kind": "Content",
-              "text": "(value: string) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "SerializedStyles",
-              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "marginInlineStart",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!paddingBlock:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block | padding-block} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block | padding-block} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `padding-block`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -396,6 +303,8 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/paddingBlock.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "paddingBlock",
           "variableTypeTokenRange": {
@@ -406,7 +315,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!paddingInline:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline | padding-inline} CSS property.\n *\n * @remarks\n *\n * As of 2020-05 logical properties aren’t pervasive enough to use on their own.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline | padding-inline} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `padding-inline`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -422,60 +331,10 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
+          "fileUrlPath": "src/paddingInline.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "paddingInline",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!paddingInlineEnd:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end | padding-inline-end} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native padding-inline-end.\n *\n * @public\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "paddingInlineEnd: "
-            },
-            {
-              "kind": "Content",
-              "text": "(value: string) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "SerializedStyles",
-              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "paddingInlineEnd",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!paddingInlineStart:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start | padding-inline-start} CSS property. [DEPRECATED]\n *\n * @deprecated\n *\n * Should be replaced with native padding-inline-start.\n *\n * @public\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "paddingInlineStart: "
-            },
-            {
-              "kind": "Content",
-              "text": "(value: string) => "
-            },
-            {
-              "kind": "Reference",
-              "text": "SerializedStyles",
-              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "paddingInlineStart",
           "variableTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 3

@@ -5,14 +5,13 @@ import { css, SerializedStyles } from "@emotion/react";
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block|margin-block}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `margin-block`.
  * @public
  */
-const marginBlock = (value: string): SerializedStyles => css`
-  margin-top: ${value};
-  margin-bottom: ${value};
-`;
+const marginBlock = (value: string): SerializedStyles =>
+  css({
+    marginBottom: value,
+    marginTop: value,
+  });
 
 export default marginBlock;

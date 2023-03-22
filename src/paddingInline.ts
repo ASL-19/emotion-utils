@@ -5,14 +5,13 @@ import { css, SerializedStyles } from "@emotion/react";
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline|padding-inline}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `padding-inline`.
  * @public
  */
-const paddingInline = (value: string): SerializedStyles => css`
-  padding-right: ${value};
-  padding-left: ${value};
-`;
+const paddingInline = (value: string): SerializedStyles =>
+  css({
+    paddingLeft: value,
+    paddingRight: value,
+  });
 
 export default paddingInline;

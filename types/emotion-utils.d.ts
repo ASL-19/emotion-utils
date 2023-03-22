@@ -8,34 +8,10 @@ import { SerializedStyles } from '@emotion/react';
 
 /**
  * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-end-width|border-inline-end-width}
- * CSS property. [DEPRECATED]
- *
- * @deprecated Should be replaced with native border-inline-end-width.
- * @public
- */
-export declare const borderInlineEndWidth: (value: string) => SerializedStyles;
-
-/**
- * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/border-inline-start-width|border-inline-start-width}
- * CSS property. [DEPRECATED]
- *
- * @deprecated Should be replaced with native border-inline-start-width.
- * @public
- */
-export declare const borderInlineStartWidth: (value: string) => SerializedStyles;
-
-/**
- * Equivalent to the
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end|inset-inline-end}
  * CSS property.
  *
- * @remarks
- * As of 2020-05
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties|logical properties}
- * aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `inset-inline-end`.
  * @public
  */
 export declare const insetInlineEnd: (value: string) => SerializedStyles;
@@ -45,9 +21,7 @@ export declare const insetInlineEnd: (value: string) => SerializedStyles;
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start|inset-inline-start}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `inset-inline-start`.
  * @public
  */
 export declare const insetInlineStart: (value: string) => SerializedStyles;
@@ -57,9 +31,7 @@ export declare const insetInlineStart: (value: string) => SerializedStyles;
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block|margin-block}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `margin-block`.
  * @public
  */
 export declare const marginBlock: (value: string) => SerializedStyles;
@@ -69,41 +41,17 @@ export declare const marginBlock: (value: string) => SerializedStyles;
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline|margin-inline}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `margin-inline`.
  * @public
  */
 export declare const marginInline: (value: string) => SerializedStyles;
 
 /**
  * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-end|margin-inline-end}
- * CSS property. [DEPRECATED]
- *
- * @deprecated Should be replaced with native margin-inline-end.
- * @public
- */
-export declare const marginInlineEnd: (value: string) => SerializedStyles;
-
-/**
- * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline-start|margin-inline-start}
- * CSS property. [DEPRECATED]
- *
- * @deprecated Should be replaced with margin-inline-start.
- * @public
- */
-export declare const marginInlineStart: (value: string) => SerializedStyles;
-
-/**
- * Equivalent to the
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block|padding-block}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `padding-block`.
  * @public
  */
 export declare const paddingBlock: (value: string) => SerializedStyles;
@@ -113,31 +61,9 @@ export declare const paddingBlock: (value: string) => SerializedStyles;
  * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline|padding-inline}
  * CSS property.
  *
- * @remarks
- * As of 2020-05 logical properties aren’t pervasive enough to use on their own.
- *
+ * @deprecated Should be replaced with `padding-inline`.
  * @public
  */
 export declare const paddingInline: (value: string) => SerializedStyles;
-
-/**
- * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-end|padding-inline-end}
- * CSS property. [DEPRECATED]
- *
- * @deprecated Should be replaced with native padding-inline-end.
- * @public
- */
-export declare const paddingInlineEnd: (value: string) => SerializedStyles;
-
-/**
- * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start|padding-inline-start}
- * CSS property. [DEPRECATED]
- *
- * @deprecated Should be replaced with native padding-inline-start.
- * @public
- */
-export declare const paddingInlineStart: (value: string) => SerializedStyles;
 
 export { }

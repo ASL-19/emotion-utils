@@ -4,15 +4,15 @@
 
 ## paddingBlock variable
 
+> Warning: This API is now obsolete.
+> 
+> Should be replaced with `padding-block`<!-- -->.
+> 
+
 Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 paddingBlock: (value: string) => SerializedStyles
 ```
-
-## Remarks
-
-As of 2020-05 logical properties aren’t pervasive enough to use on their own.
-
