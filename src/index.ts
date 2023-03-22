@@ -4,9 +4,9 @@
  * @packageDocumentation
  */
 
-export { default as insetInlineEnd } from "./insetInlineEnd.js";
-export { default as insetInlineStart } from "./insetInlineStart.js";
-export { default as marginBlock } from "./marginBlock.js";
-export { default as marginInline } from "./marginInline.js";
-export { default as paddingBlock } from "./paddingBlock.js";
-export { default as paddingInline } from "./paddingInline.js";
+export { default as insetInlineEnd } from "./insetInlineEnd";
+export { default as insetInlineStart } from "./insetInlineStart";
+export { default as marginBlock } from "./marginBlock";
+export { default as marginInline } from "./marginInline";
+export { default as paddingBlock } from "./paddingBlock";
+export { default as paddingInline } from "./paddingInline";

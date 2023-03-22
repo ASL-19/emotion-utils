@@ -1,9 +1,12 @@
 {
-  "extends": "@asl-19/shared-package-configs/tsconfig-esm.json",
+  "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
+  "include": [
+    "*.js",
+    "*.ts",
+    ".eslintrc.js",
+    "src/**/*.ts*"
+  ],
   "compilerOptions": {
     "outDir": "dist"
-  },
-  "include": [
-    "src/**/*.ts*"
-  ]
+  }
 }
