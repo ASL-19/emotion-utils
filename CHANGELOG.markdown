@@ -1,5 +1,12 @@
 # @asl-19/emotion-utils changelog
 
+## 0.4.0 [2023-03-22]
+
+### Changes
+
+- Removed deprecated logical property functions; marked existing logical property functions as deprecated
+- Upgraded dependencies and project configuration
+
 ## [0.3.0](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A0.3.0+is%3Apr) [2021-08-19]
 
 ### Changes
