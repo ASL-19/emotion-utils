@@ -4,13 +4,71 @@
 
 ```ts
 
+import { CSSObject } from '@emotion/react';
+import { FC } from 'react';
+import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
+import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
+
+// @public (undocumented)
+export const createMedia: <Breakpoints extends {
+    [name: string]: number;
+}>({ breakpoints, environment, }: {
+    breakpoints: Breakpoints;
+    environment: string;
+}) => {
+    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {
+            gte?: Styles | undefined;
+            lt?: Styles | undefined;
+        } | undefined; }) => SerializedStyles_2;
+    DisplayAtWidth: FC<{
+        children: ReactNode;
+        greaterThanOrEqual: keyof Breakpoints;
+        lessThan?: undefined;
+    } | {
+        children: ReactNode;
+        greaterThanOrEqual?: undefined;
+        lessThan: keyof Breakpoints;
+    }>;
+};
+
+// @public (undocumented)
+export const gridContainer: ({ columnGap, columns, rowGap, }?: {
+    columnGap?: string | undefined;
+    columns?: number | undefined;
+    rowGap?: string | undefined;
+}) => SerializedStyles_2;
+
+// @public
+export const hiddenWhenJs: SerializedStyles_2;
+
+// @public
+export const hiddenWhenNoJs: SerializedStyles_2;
+
+// @public
+export const hiddenWhenPointerCoarseOrNone: SerializedStyles_2;
+
+// @public
+export const hiddenWhenPointerFine: SerializedStyles_2;
+
+// @public
+export const hoverStyles: (styles: Styles) => SerializedStyles_2;
 
 // @public @deprecated
 export const insetInlineEnd: (value: string) => SerializedStyles;
 
 // @public @deprecated
 export const insetInlineStart: (value: string) => SerializedStyles;
+
+// @public
+export const invisible: SerializedStyles_2;
+
+// @public
+export const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
+    fontSize: string;
+    lineCount: number;
+    lineHeight: number;
+}) => SerializedStyles_2;
 
 // @public @deprecated
 export const marginBlock: (value: string) => SerializedStyles;
@@ -21,7 +79,10 @@ export const marginInline: (value: string) => SerializedStyles;
 // @public @deprecated
 export const paddingBlock: (value: string) => SerializedStyles;
 
-// @public @deprecated
-export const paddingInline: (value: string) => SerializedStyles;
+// @public
+export type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
+
+// @public
+export const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles_2;
 
 ```

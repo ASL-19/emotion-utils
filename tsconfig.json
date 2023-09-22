@@ -7,6 +7,8 @@
     "src/**/*.ts*"
   ],
   "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
     "outDir": "dist"
   }
 }

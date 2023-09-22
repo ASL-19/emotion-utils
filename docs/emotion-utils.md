@@ -10,10 +10,25 @@ A collection of Emotion utility functions.
 
 |  Variable | Description |
 |  --- | --- |
+|  [createMedia](./emotion-utils.createmedia.md) |  |
+|  [gridContainer](./emotion-utils.gridcontainer.md) |  |
+|  [hiddenWhenJs](./emotion-utils.hiddenwhenjs.md) | Hidden element when javascript is enabled |
+|  [hiddenWhenNoJs](./emotion-utils.hiddenwhennojs.md) | Hidden element when javascript is disabled |
+|  [hiddenWhenPointerCoarseOrNone](./emotion-utils.hiddenwhenpointercoarseornone.md) | Hide element when pointer is coarse or none |
+|  [hiddenWhenPointerFine](./emotion-utils.hiddenwhenpointerfine.md) | Hide element when pointer is fine |
+|  [hoverStyles](./emotion-utils.hoverstyles.md) | <p>Apply provided styles on hover.</p><p>Uses the <code>any-hover</code> media condition (rather than <code>hover</code>) so hover styles still appear on devices that support both touch and cursor input (e.g. iPads and touch laptops).</p> |
 |  [insetInlineEnd](./emotion-utils.insetinlineend.md) | Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property. |
 |  [insetInlineStart](./emotion-utils.insetinlinestart.md) | Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property. |
+|  [invisible](./emotion-utils.invisible.md) | Hide element |
+|  [lineClampedText](./emotion-utils.lineclampedtext.md) | Display ellipsis for overflow text |
 |  [marginBlock](./emotion-utils.marginblock.md) | Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property. |
 |  [marginInline](./emotion-utils.margininline.md) | Equivalent to the [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline) CSS property. |
 |  [paddingBlock](./emotion-utils.paddingblock.md) | Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property. |
-|  [paddingInline](./emotion-utils.paddinginline.md) | Equivalent to the [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline) CSS property. |
+|  [transitionDurationWithPrefersReducedMotion](./emotion-utils.transitiondurationwithprefersreducedmotion.md) | Render hidden pseudo-element to pre-fill space taken up by bolded text (to avoid layout shift) |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [Styles](./emotion-utils.styles.md) | <p>Emotion object or serialized style(s). Useful to allow style utility functions (e.g. <code>breakpointStyles</code>) to accept a <code>CSSObject</code> directly with type safety and IntelliSense.</p><p>This should only be used for functions that accept styles and return <code>SerializedStyles</code> — not for raw values passed to the <code>css</code> prop. If we pass an object or array to the <code>css</code> prop directly the styles will be serialized on each render (rather than serialized once when the module loads).</p> |
 
