@@ -10,7 +10,6 @@ A collection of Emotion utility functions.
 
 |  Variable | Description |
 |  --- | --- |
-|  [createMedia](./emotion-utils.createmedia.md) |  |
 |  [gridContainer](./emotion-utils.gridcontainer.md) |  |
 |  [hiddenWhenJs](./emotion-utils.hiddenwhenjs.md) | Hidden element when javascript is enabled |
 |  [hiddenWhenNoJs](./emotion-utils.hiddenwhennojs.md) | Hidden element when javascript is disabled |

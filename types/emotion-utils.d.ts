@@ -5,39 +5,8 @@
  */
 
 import { CSSObject } from '@emotion/react';
-import { FC } from 'react';
-import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
 import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
-
-export declare const createMedia: <Breakpoints extends {
-    [name: string]: number;
-}>({ breakpoints, environment, }: {
-    breakpoints: Breakpoints;
-    environment: string;
-}) => {
-    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {
-            /**
-             * Styles to apply when viewport width is greater than or equal to the
-             * specified breakpoint.
-             */
-            gte?: Styles | undefined;
-            /**
-             * Styles to apply when viewport width is less than the specified
-             * breakpoint.
-             */
-            lt?: Styles | undefined;
-        } | undefined; }) => SerializedStyles_2;
-    DisplayAtWidth: FC<{
-        children: ReactNode;
-        greaterThanOrEqual: keyof Breakpoints;
-        lessThan?: undefined;
-    } | {
-        children: ReactNode;
-        greaterThanOrEqual?: undefined;
-        lessThan: keyof Breakpoints;
-    }>;
-};
 
 export declare const gridContainer: ({ columnGap, columns, rowGap, }?: {
     columnGap?: string | undefined;

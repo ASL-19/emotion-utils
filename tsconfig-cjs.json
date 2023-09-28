@@ -1,8 +1,6 @@
 {
   "extends": "@asl-19/shared-package-configs/tsconfig-cjs.json",
   "compilerOptions": {
-    "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
     "outDir": "dist/cjs"
   },
   "include": [
