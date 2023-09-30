@@ -5,9 +5,13 @@ import Styles from "./Styles";
 /**
  * Apply provided styles on hover.
  *
- * Uses the `any-hover` media condition (rather than `hover`) so hover styles
- * still appear on devices that support both touch and cursor input (e.g. iPads
- * and touch laptops).
+ * @remarks
+ * Uses the
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover|`any-hover` media condition}
+ * (rather than
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover|`hover`})
+ * so hover styles still appear on devices that support both touch and cursor
+ * input (e.g. iPads and touch laptops).
  *
  * @public
  */

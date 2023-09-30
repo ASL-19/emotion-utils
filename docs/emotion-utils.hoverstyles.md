@@ -6,10 +6,13 @@
 
 Apply provided styles on hover.
 
-Uses the `any-hover` media condition (rather than `hover`<!-- -->) so hover styles still appear on devices that support both touch and cursor input (e.g. iPads and touch laptops).
-
 **Signature:**
 
 ```typescript
 hoverStyles: (styles: Styles) => SerializedStyles
 ```
+
+## Remarks
+
+Uses the [\`any-hover\` media condition](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover) (rather than [\`hover\`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover)<!-- -->) so hover styles still appear on devices that support both touch and cursor input (e.g. iPads and touch laptops).
+

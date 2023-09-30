@@ -1,8 +1,13 @@
 import { css, SerializedStyles } from "@emotion/react";
 
 /**
- * Render hidden pseudo-element to pre-fill space taken up by bolded text (to
- * avoid layout shift)*/
+ * Set a transition duration with override to 0 if the user has enabled an
+ * OS/browser setting to request sites to reduce motion.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+ *
+ * @public
+ */
 const transitionDurationWithPrefersReducedMotion = (
   transitionDuration: string,
 ): SerializedStyles =>
@@ -12,13 +17,13 @@ const transitionDurationWithPrefersReducedMotion = (
     },
     {
       "@media (prefers-reduced-motion)": {
-        /* For Ariakit dialogs we need to set transition-duration to 0.01s or its
-  animation detection code (which waits for exit animations to complete before
-  unmounting dialogs) will fail.
+        // For Ariakit dialogs we need to set transition-duration to 0.01s or
+        // its animation detection code (which waits for exit animations to
+        // complete before unmounting dialogs) will fail.
 
-  Without this trick we’d need to use matchMedia to track the state of the
-  (prefers-reduced-motion) media condition and dynamically update the
-  useDialogState animated argument.  */
+        // Without this trick we’d need to use matchMedia to track the state of
+        // the (prefers-reduced-motion) media condition and dynamically update
+        // the useDialogState animated argument.
         " &[data-backdrop], &[data-dialog]": {
           transitionDuration: "0.01s",
         },

@@ -4,7 +4,7 @@
 
 ## hiddenWhenPointerFine variable
 
-Hide element when pointer is fine
+Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is `fine` (not `coarse` or `none`<!-- -->).
 
 **Signature:**
 

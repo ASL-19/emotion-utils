@@ -36,28 +36,40 @@ export declare const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
 })) => SerializedStyles;
 
 /**
- * Hidden element when javascript is enabled
+ * Hide when JavaScript loaded.
+ *
+ * @remarks
+ * Relies on `<html>` `js` class, which we set in the
+ * `getBeforeRenderScriptContent` function in most web projects.
  *
  * @public
  */
 export declare const hiddenWhenJs: SerializedStyles;
 
 /**
- * Hidden element when javascript is disabled
+ * Hide when JavaScript not loaded.
+ *
+ * @remarks
+ * Relies on `<html>` `js` class, which we set in the
+ * `getBeforeRenderScriptContent` function in most web projects.
  *
  * @public
  */
 export declare const hiddenWhenNoJs: SerializedStyles;
 
 /**
- * Hide element when pointer is coarse or none
+ * Hide when
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer|pointer media feature}
+ * is `coarse` or `none` (not `fine`).
  *
  * @public
  */
 export declare const hiddenWhenPointerCoarseOrNone: SerializedStyles;
 
 /**
- * Hide element when pointer is fine
+ * Hide when
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer|pointer media feature}
+ * is `fine` (not `coarse` or `none`).
  *
  * @public
  */
@@ -66,9 +78,13 @@ export declare const hiddenWhenPointerFine: SerializedStyles;
 /**
  * Apply provided styles on hover.
  *
- * Uses the `any-hover` media condition (rather than `hover`) so hover styles
- * still appear on devices that support both touch and cursor input (e.g. iPads
- * and touch laptops).
+ * @remarks
+ * Uses the
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover|`any-hover` media condition}
+ * (rather than
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover|`hover`})
+ * so hover styles still appear on devices that support both touch and cursor
+ * input (e.g. iPads and touch laptops).
  *
  * @public
  */
@@ -95,14 +111,20 @@ export declare const insetInlineEnd: (value: string) => SerializedStyles;
 export declare const insetInlineStart: (value: string) => SerializedStyles;
 
 /**
- * Hide element
+ * Visually hide element while keeping it accessible to keyboard and screen
+ * reader navigation.
  *
  * @public
  */
 export declare const invisible: SerializedStyles;
 
 /**
- * Display ellipsis for overflow text
+ * Clamp with ellipsis when text extends past the provided number of lines.
+ *
+ * @remarks
+ * The box will always have a height equivalent to `lineCount` * `lineHeight` *
+ * `fontSize`. This is necessary to ensure the overflow is cut off at the
+ * correct vertical position.
  *
  * @public
  */
@@ -143,8 +165,10 @@ export declare const marginInline: (value: string) => SerializedStyles;
 export declare const paddingBlock: (value: string) => SerializedStyles;
 
 /**
- * Emotion object or serialized style(s). Useful to allow style utility
- * functions (e.g. `breakpointStyles`) to accept a `CSSObject` directly with
+ * Emotion `CSSObject` or `SerializedStyles` (or array containing them).
+ *
+ * @remarks
+ * Useful to allow style utility functions to accept `CSSObject` directly with
  * type safety and IntelliSense.
  *
  * This should only be used for functions that accept styles and return
@@ -154,12 +178,19 @@ export declare const paddingBlock: (value: string) => SerializedStyles;
  *
  * @see
  * https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components
+ *
+ * @public
  */
 export declare type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
 
 /**
- * Render hidden pseudo-element to pre-fill space taken up by bolded text (to
- * avoid layout shift)*/
+ * Set a transition duration with override to 0 if the user has enabled an
+ * OS/browser setting to request sites to reduce motion.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+ *
+ * @public
+ */
 export declare const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;
 
 export { }

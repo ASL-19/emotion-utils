@@ -4,7 +4,7 @@
 
 ## transitionDurationWithPrefersReducedMotion variable
 
-Render hidden pseudo-element to pre-fill space taken up by bolded text (to avoid layout shift)
+Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion.
 
 **Signature:**
 

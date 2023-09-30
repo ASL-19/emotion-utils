@@ -1,11 +1,11 @@
 import { css, SerializedStyles } from "@emotion/react";
 
 /**
- * Hide element
+ * Visually hide element while keeping it accessible to keyboard and screen
+ * reader navigation.
  *
  * @public
  */
-
 const invisible: SerializedStyles = css({
   clip: "rect(1px, 1px, 1px, 1px)",
   float: "none",

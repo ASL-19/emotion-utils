@@ -1,8 +1,10 @@
 import { CSSObject, SerializedStyles } from "@emotion/react";
 
 /**
- * Emotion object or serialized style(s). Useful to allow style utility
- * functions (e.g. `breakpointStyles`) to accept a `CSSObject` directly with
+ * Emotion `CSSObject` or `SerializedStyles` (or array containing them).
+ *
+ * @remarks
+ * Useful to allow style utility functions to accept `CSSObject` directly with
  * type safety and IntelliSense.
  *
  * This should only be used for functions that accept styles and return
@@ -12,6 +14,8 @@ import { CSSObject, SerializedStyles } from "@emotion/react";
  *
  * @see
  * https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components
+ *
+ * @public
  */
 type Styles =
   | SerializedStyles

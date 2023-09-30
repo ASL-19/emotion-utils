@@ -235,7 +235,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!hiddenWhenJs:var",
-          "docComment": "/**\n * Hidden element when javascript is enabled\n *\n * @public\n */\n",
+          "docComment": "/**\n * Hide when JavaScript loaded.\n *\n * @remarks\n *\n * Relies on `<html>` `js` class, which we set in the `getBeforeRenderScriptContent` function in most web projects.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -259,7 +259,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!hiddenWhenNoJs:var",
-          "docComment": "/**\n * Hidden element when javascript is disabled\n *\n * @public\n */\n",
+          "docComment": "/**\n * Hide when JavaScript not loaded.\n *\n * @remarks\n *\n * Relies on `<html>` `js` class, which we set in the `getBeforeRenderScriptContent` function in most web projects.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -283,7 +283,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!hiddenWhenPointerCoarseOrNone:var",
-          "docComment": "/**\n * Hide element when pointer is coarse or none\n *\n * @public\n */\n",
+          "docComment": "/**\n * Hide when {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer | pointer media feature} is `coarse` or `none` (not `fine`).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -307,7 +307,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!hiddenWhenPointerFine:var",
-          "docComment": "/**\n * Hide element when pointer is fine\n *\n * @public\n */\n",
+          "docComment": "/**\n * Hide when {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer | pointer media feature} is `fine` (not `coarse` or `none`).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -331,7 +331,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!hoverStyles:var",
-          "docComment": "/**\n * Apply provided styles on hover.\n *\n * Uses the `any-hover` media condition (rather than `hover`) so hover styles still appear on devices that support both touch and cursor input (e.g. iPads and touch laptops).\n *\n * @public\n */\n",
+          "docComment": "/**\n * Apply provided styles on hover.\n *\n * @remarks\n *\n * Uses the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover | `any-hover` media condition} (rather than {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover | `hover`}) so hover styles still appear on devices that support both touch and cursor input (e.g. iPads and touch laptops).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -424,7 +424,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!invisible:var",
-          "docComment": "/**\n * Hide element\n *\n * @public\n */\n",
+          "docComment": "/**\n * Visually hide element while keeping it accessible to keyboard and screen reader navigation.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -448,7 +448,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!lineClampedText:var",
-          "docComment": "/**\n * Display ellipsis for overflow text\n *\n * @public\n */\n",
+          "docComment": "/**\n * Clamp with ellipsis when text extends past the provided number of lines.\n *\n * @remarks\n *\n * The box will always have a height equivalent to `lineCount` * `lineHeight` * `fontSize`. This is necessary to ensure the overflow is cut off at the correct vertical position.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -560,7 +560,7 @@
         {
           "kind": "TypeAlias",
           "canonicalReference": "@asl-19/emotion-utils!Styles:type",
-          "docComment": "/**\n * Emotion object or serialized style(s). Useful to allow style utility functions (e.g. `breakpointStyles`) to accept a `CSSObject` directly with type safety and IntelliSense.\n *\n * This should only be used for functions that accept styles and return `SerializedStyles` — not for raw values passed to the `css` prop. If we pass an object or array to the `css` prop directly the styles will be serialized on each render (rather than serialized once when the module loads).\n *\n * @see\n *\n * https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components\n */\n",
+          "docComment": "/**\n * Emotion `CSSObject` or `SerializedStyles` (or array containing them).\n *\n * @remarks\n *\n * Useful to allow style utility functions to accept `CSSObject` directly with type safety and IntelliSense.\n *\n * This should only be used for functions that accept styles and return `SerializedStyles` — not for raw values passed to the `css` prop. If we pass an object or array to the `css` prop directly the styles will be serialized on each render (rather than serialized once when the module loads).\n *\n * @see\n *\n * https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -627,7 +627,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!transitionDurationWithPrefersReducedMotion:var",
-          "docComment": "/**\n * Render hidden pseudo-element to pre-fill space taken up by bolded text (to avoid layout shift)\n */\n",
+          "docComment": "/**\n * Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion.\n *\n * @see\n *\n * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

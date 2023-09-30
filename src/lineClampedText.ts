@@ -1,11 +1,15 @@
 import { css, SerializedStyles } from "@emotion/react";
 
 /**
- * Display ellipsis for overflow text
+ * Clamp with ellipsis when text extends past the provided number of lines.
+ *
+ * @remarks
+ * The box will always have a height equivalent to `lineCount` * `lineHeight` *
+ * `fontSize`. This is necessary to ensure the overflow is cut off at the
+ * correct vertical position.
  *
  * @public
  */
-
 const lineClampedText = ({
   fontSize,
   lineCount,

@@ -4,7 +4,7 @@
 
 ## invisible variable
 
-Hide element
+Visually hide element while keeping it accessible to keyboard and screen reader navigation.
 
 **Signature:**
 

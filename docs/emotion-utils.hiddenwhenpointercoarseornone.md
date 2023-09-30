@@ -4,7 +4,7 @@
 
 ## hiddenWhenPointerCoarseOrNone variable
 
-Hide element when pointer is coarse or none
+Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is `coarse` or `none` (not `fine`<!-- -->).
 
 **Signature:**
 

@@ -4,10 +4,15 @@
 
 ## hiddenWhenJs variable
 
-Hidden element when javascript is enabled
+Hide when JavaScript loaded.
 
 **Signature:**
 
 ```typescript
 hiddenWhenJs: SerializedStyles
 ```
+
+## Remarks
+
+Relies on `<html>` `js` class, which we set in the `getBeforeRenderScriptContent` function in most web projects.
+

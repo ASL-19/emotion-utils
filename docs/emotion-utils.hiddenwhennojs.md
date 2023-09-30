@@ -4,10 +4,15 @@
 
 ## hiddenWhenNoJs variable
 
-Hidden element when javascript is disabled
+Hide when JavaScript not loaded.
 
 **Signature:**
 
 ```typescript
 hiddenWhenNoJs: SerializedStyles
 ```
+
+## Remarks
+
+Relies on `<html>` `js` class, which we set in the `getBeforeRenderScriptContent` function in most web projects.
+
