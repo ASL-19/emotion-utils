@@ -4,7 +4,7 @@
  * @packageDocumentation
  */
 
-export { default as Styles } from "./styleTypes";
+export { default as Styles } from "./Styles";
 export { default as insetInlineEnd } from "./insetInlineEnd";
 export { default as insetInlineStart } from "./insetInlineStart";
 export { default as marginBlock } from "./marginBlock";
