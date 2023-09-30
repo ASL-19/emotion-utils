@@ -4,12 +4,20 @@
 
 ## gridContainer variable
 
+Create grid container with provided `gap` (or separate `columnGap` and `rowGap` values).
+
 **Signature:**
 
 ```typescript
-gridContainer: ({ columnGap, columns, rowGap, }?: {
+gridContainer: ({ columnGap, columns, gap, rowGap, }: {
+    columns: number;
+} & ({
     columnGap?: string | undefined;
-    columns?: number | undefined;
+    gap?: undefined;
     rowGap?: string | undefined;
-}) => import("@emotion/utils").SerializedStyles
+} | {
+    columnGap?: undefined;
+    gap?: string | undefined;
+    rowGap?: undefined;
+})) => import("@emotion/utils").SerializedStyles
 ```

@@ -19,3 +19,4 @@ export { default as hiddenWhenNoJs } from "./hiddenWhenNoJs";
 export { default as hiddenWhenPointerCoarseOrNone } from "./hiddenWhenPointerCoarseOrNone";
 export { default as hiddenWhenPointerFine } from "./hiddenWhenPointerFine";
 export { default as invisible } from "./invisible";
+export { default as devLabel } from "./devLabel";

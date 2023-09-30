@@ -8,11 +8,33 @@ import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
 import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
 
-export declare const gridContainer: ({ columnGap, columns, rowGap, }?: {
+/**
+ * Returns CSSObject containing provided `label`, but only in development.
+ *
+ * @remarks
+ * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod,
+ * so we should use this utility to avoid long (and potentially CPU expensive?)
+ * generated `className`s in production.
+ */
+export declare const devLabel: (label: string) => CSSObject | null;
+
+/**
+ * Create grid container with provided `gap` (or separate `columnGap` and
+ * `rowGap` values).
+ *
+ * @public
+ */
+export declare const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
+    columns: number;
+} & ({
     columnGap?: string | undefined;
-    columns?: number | undefined;
+    gap?: undefined;
     rowGap?: string | undefined;
-}) => SerializedStyles_2;
+} | {
+    columnGap?: undefined;
+    gap?: string | undefined;
+    rowGap?: undefined;
+})) => SerializedStyles_2;
 
 /**
  * Hidden element when javascript is enabled

@@ -8,12 +8,21 @@ import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
 import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
 
-// @public (undocumented)
-export const gridContainer: ({ columnGap, columns, rowGap, }?: {
+// @public
+export const devLabel: (label: string) => CSSObject | null;
+
+// @public
+export const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
+    columns: number;
+} & ({
     columnGap?: string | undefined;
-    columns?: number | undefined;
+    gap?: undefined;
     rowGap?: string | undefined;
-}) => SerializedStyles_2;
+} | {
+    columnGap?: undefined;
+    gap?: string | undefined;
+    rowGap?: undefined;
+})) => SerializedStyles_2;
 
 // @public
 export const hiddenWhenJs: SerializedStyles_2;

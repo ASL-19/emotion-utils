@@ -174,8 +174,40 @@
       "members": [
         {
           "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!devLabel:var",
+          "docComment": "/**\n * Returns CSSObject containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "devLabel: "
+            },
+            {
+              "kind": "Content",
+              "text": "(label: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "CSSObject",
+              "canonicalReference": "@emotion/serialize!CSSObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            }
+          ],
+          "fileUrlPath": "src/devLabel.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "devLabel",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!gridContainer:var",
-          "docComment": "",
+          "docComment": "/**\n * Create grid container with provided `gap` (or separate `columnGap` and `rowGap` values).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -183,7 +215,7 @@
             },
             {
               "kind": "Content",
-              "text": "({ columnGap, columns, rowGap, }?: {\n    columnGap?: string | undefined;\n    columns?: number | undefined;\n    rowGap?: string | undefined;\n}) => import(\"@emotion/utils\")."
+              "text": "({ columnGap, columns, gap, rowGap, }: {\n    columns: number;\n} & ({\n    columnGap?: string | undefined;\n    gap?: undefined;\n    rowGap?: string | undefined;\n} | {\n    columnGap?: undefined;\n    gap?: string | undefined;\n    rowGap?: undefined;\n})) => import(\"@emotion/utils\")."
             },
             {
               "kind": "Reference",
