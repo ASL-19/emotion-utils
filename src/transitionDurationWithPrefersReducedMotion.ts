@@ -4,8 +4,6 @@ import { css, SerializedStyles } from "@emotion/react";
  * Set a transition duration with override to 0 if the user has enabled an
  * OS/browser setting to request sites to reduce motion.
  *
- * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
- *
  * @public
  */
 const transitionDurationWithPrefersReducedMotion = (

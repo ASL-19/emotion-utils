@@ -187,8 +187,6 @@ export declare type Styles = SerializedStyles | CSSObject | Array<SerializedStyl
  * Set a transition duration with override to 0 if the user has enabled an
  * OS/browser setting to request sites to reduce motion.
  *
- * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
- *
  * @public
  */
 export declare const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;
