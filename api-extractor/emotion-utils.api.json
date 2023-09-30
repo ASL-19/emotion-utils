@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.34.4",
+    "toolVersion": "7.37.2",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -174,6 +174,199 @@
       "members": [
         {
           "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!devLabel:var",
+          "docComment": "/**\n * Returns `CSSObject` containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "devLabel: "
+            },
+            {
+              "kind": "Content",
+              "text": "(label: string) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "CSSObject",
+              "canonicalReference": "@emotion/serialize!CSSObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | null"
+            }
+          ],
+          "fileUrlPath": "src/devLabel.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "devLabel",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!gridContainer:var",
+          "docComment": "/**\n * Create grid container with provided `gap` (or separate `columnGap` and `rowGap` values).\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "gridContainer: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ columnGap, columns, gap, rowGap, }: {\n    columns: number;\n} & ({\n    columnGap?: string | undefined;\n    gap?: undefined;\n    rowGap?: string | undefined;\n} | {\n    columnGap?: undefined;\n    gap?: string | undefined;\n    rowGap?: undefined;\n})) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/gridContainer.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "gridContainer",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!hiddenWhenJs:var",
+          "docComment": "/**\n * Hide when JavaScript loaded.\n *\n * @remarks\n *\n * Relies on `<html>` `js` class, which we set in the `getBeforeRenderScriptContent` function in most web projects.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hiddenWhenJs: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/hiddenWhenJs.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "hiddenWhenJs",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!hiddenWhenNoJs:var",
+          "docComment": "/**\n * Hide when JavaScript not loaded.\n *\n * @remarks\n *\n * Relies on `<html>` `js` class, which we set in the `getBeforeRenderScriptContent` function in most web projects.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hiddenWhenNoJs: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/hiddenWhenNoJs.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "hiddenWhenNoJs",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!hiddenWhenPointerCoarseOrNone:var",
+          "docComment": "/**\n * Hide when {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer | pointer media feature} is `coarse` or `none` (not `fine`).\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hiddenWhenPointerCoarseOrNone: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/hiddenWhenPointerCoarseOrNone.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "hiddenWhenPointerCoarseOrNone",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!hiddenWhenPointerFine:var",
+          "docComment": "/**\n * Hide when {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer | pointer media feature} is `fine` (not `coarse` or `none`).\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hiddenWhenPointerFine: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/hiddenWhenPointerFine.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "hiddenWhenPointerFine",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!hoverStyles:var",
+          "docComment": "/**\n * Apply provided styles on hover.\n *\n * @remarks\n *\n * Uses the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover | `any-hover` media condition} (rather than {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover | `hover`}) so hover styles still appear on devices that support both touch and cursor input (e.g. iPads and touch laptops).\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "hoverStyles: "
+            },
+            {
+              "kind": "Content",
+              "text": "(styles: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/hoverStyles.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "hoverStyles",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!insetInlineEnd:var",
           "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end | inset-inline-end} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `inset-inline-end`.\n *\n * @public\n */\n",
           "excerptTokens": [
@@ -223,6 +416,58 @@
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "insetInlineStart",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!invisible:var",
+          "docComment": "/**\n * Visually hide element while keeping it accessible to keyboard and screen reader navigation.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "invisible: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/invisible.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "invisible",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!lineClampedText:var",
+          "docComment": "/**\n * Clamp with ellipsis when text extends past the provided number of lines.\n *\n * @remarks\n *\n * The box will always have a height equivalent to `lineCount` * `lineHeight` * `fontSize`. This is necessary to ensure the overflow is cut off at the correct vertical position.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "lineClampedText: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ fontSize, lineCount, lineHeight, }: {\n    fontSize: string;\n    lineCount: number;\n    lineHeight: number;\n}) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/lineClampedText.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "lineClampedText",
           "variableTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 3
@@ -313,17 +558,84 @@
           }
         },
         {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!paddingInline:var",
-          "docComment": "/**\n * Equivalent to the {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline | padding-inline} CSS property.\n *\n * @deprecated\n *\n * Should be replaced with `padding-inline`.\n *\n * @public\n */\n",
+          "kind": "TypeAlias",
+          "canonicalReference": "@asl-19/emotion-utils!Styles:type",
+          "docComment": "/**\n * Emotion `CSSObject` or `SerializedStyles` (or array containing them).\n *\n * @remarks\n *\n * Useful to allow style utility functions to accept `CSSObject` directly with type safety and IntelliSense.\n *\n * This should only be used for functions that accept styles and return `SerializedStyles` — not for raw values passed to the `css` prop. If we pass an object or array to the `css` prop directly the styles will be serialized on each render (rather than serialized once when the module loads).\n *\n * @see\n *\n * https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "paddingInline: "
+              "text": "type Styles = "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             },
             {
               "kind": "Content",
-              "text": "(value: string) => "
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "CSSObject",
+              "canonicalReference": "@emotion/serialize!CSSObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | "
+            },
+            {
+              "kind": "Reference",
+              "text": "CSSObject",
+              "canonicalReference": "@emotion/serialize!CSSObject:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "src/Styles.ts",
+          "releaseTag": "Public",
+          "name": "Styles",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!transitionDurationWithPrefersReducedMotion:var",
+          "docComment": "/**\n * Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "transitionDurationWithPrefersReducedMotion: "
+            },
+            {
+              "kind": "Content",
+              "text": "(transitionDuration: string) => "
             },
             {
               "kind": "Reference",
@@ -331,10 +643,10 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
             }
           ],
-          "fileUrlPath": "src/paddingInline.ts",
+          "fileUrlPath": "src/transitionDurationWithPrefersReducedMotion.ts",
           "isReadonly": true,
           "releaseTag": "Public",
-          "name": "paddingInline",
+          "name": "transitionDurationWithPrefersReducedMotion",
           "variableTypeTokenRange": {
             "startIndex": 1,
             "endIndex": 3

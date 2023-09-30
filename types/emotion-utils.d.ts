@@ -4,7 +4,91 @@
  * @packageDocumentation
  */
 
+import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
+
+/**
+ * Returns `CSSObject` containing provided `label`, but only in development.
+ *
+ * @remarks
+ * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod,
+ * so we should use this utility to avoid long (and potentially CPU expensive?)
+ * generated `className`s in production.
+ */
+export declare const devLabel: (label: string) => CSSObject | null;
+
+/**
+ * Create grid container with provided `gap` (or separate `columnGap` and
+ * `rowGap` values).
+ *
+ * @public
+ */
+export declare const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
+    columns: number;
+} & ({
+    columnGap?: string | undefined;
+    gap?: undefined;
+    rowGap?: string | undefined;
+} | {
+    columnGap?: undefined;
+    gap?: string | undefined;
+    rowGap?: undefined;
+})) => SerializedStyles;
+
+/**
+ * Hide when JavaScript loaded.
+ *
+ * @remarks
+ * Relies on `<html>` `js` class, which we set in the
+ * `getBeforeRenderScriptContent` function in most web projects.
+ *
+ * @public
+ */
+export declare const hiddenWhenJs: SerializedStyles;
+
+/**
+ * Hide when JavaScript not loaded.
+ *
+ * @remarks
+ * Relies on `<html>` `js` class, which we set in the
+ * `getBeforeRenderScriptContent` function in most web projects.
+ *
+ * @public
+ */
+export declare const hiddenWhenNoJs: SerializedStyles;
+
+/**
+ * Hide when
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer|pointer media feature}
+ * is `coarse` or `none` (not `fine`).
+ *
+ * @public
+ */
+export declare const hiddenWhenPointerCoarseOrNone: SerializedStyles;
+
+/**
+ * Hide when
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer|pointer media feature}
+ * is `fine` (not `coarse` or `none`).
+ *
+ * @public
+ */
+export declare const hiddenWhenPointerFine: SerializedStyles;
+
+/**
+ * Apply provided styles on hover.
+ *
+ * @remarks
+ * Uses the
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover|`any-hover` media condition}
+ * (rather than
+ * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover|`hover`})
+ * so hover styles still appear on devices that support both touch and cursor
+ * input (e.g. iPads and touch laptops).
+ *
+ * @public
+ */
+export declare const hoverStyles: (styles: Styles) => SerializedStyles;
 
 /**
  * Equivalent to the
@@ -25,6 +109,30 @@ export declare const insetInlineEnd: (value: string) => SerializedStyles;
  * @public
  */
 export declare const insetInlineStart: (value: string) => SerializedStyles;
+
+/**
+ * Visually hide element while keeping it accessible to keyboard and screen
+ * reader navigation.
+ *
+ * @public
+ */
+export declare const invisible: SerializedStyles;
+
+/**
+ * Clamp with ellipsis when text extends past the provided number of lines.
+ *
+ * @remarks
+ * The box will always have a height equivalent to `lineCount` * `lineHeight` *
+ * `fontSize`. This is necessary to ensure the overflow is cut off at the
+ * correct vertical position.
+ *
+ * @public
+ */
+export declare const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
+    fontSize: string;
+    lineCount: number;
+    lineHeight: number;
+}) => SerializedStyles;
 
 /**
  * Equivalent to the
@@ -57,13 +165,30 @@ export declare const marginInline: (value: string) => SerializedStyles;
 export declare const paddingBlock: (value: string) => SerializedStyles;
 
 /**
- * Equivalent to the
- * {@link https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline|padding-inline}
- * CSS property.
+ * Emotion `CSSObject` or `SerializedStyles` (or array containing them).
  *
- * @deprecated Should be replaced with `padding-inline`.
+ * @remarks
+ * Useful to allow style utility functions to accept `CSSObject` directly with
+ * type safety and IntelliSense.
+ *
+ * This should only be used for functions that accept styles and return
+ * `SerializedStyles` — not for raw values passed to the `css` prop. If we pass
+ * an object or array to the `css` prop directly the styles will be serialized
+ * on each render (rather than serialized once when the module loads).
+ *
+ * @see
+ * https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components
+ *
  * @public
  */
-export declare const paddingInline: (value: string) => SerializedStyles;
+export declare type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
+
+/**
+ * Set a transition duration with override to 0 if the user has enabled an
+ * OS/browser setting to request sites to reduce motion.
+ *
+ * @public
+ */
+export declare const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;
 
 export { }

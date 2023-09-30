@@ -4,13 +4,55 @@
 
 ```ts
 
+import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
+
+// @public
+export const devLabel: (label: string) => CSSObject | null;
+
+// @public
+export const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
+    columns: number;
+} & ({
+    columnGap?: string | undefined;
+    gap?: undefined;
+    rowGap?: string | undefined;
+} | {
+    columnGap?: undefined;
+    gap?: string | undefined;
+    rowGap?: undefined;
+})) => SerializedStyles;
+
+// @public
+export const hiddenWhenJs: SerializedStyles;
+
+// @public
+export const hiddenWhenNoJs: SerializedStyles;
+
+// @public
+export const hiddenWhenPointerCoarseOrNone: SerializedStyles;
+
+// @public
+export const hiddenWhenPointerFine: SerializedStyles;
+
+// @public
+export const hoverStyles: (styles: Styles) => SerializedStyles;
 
 // @public @deprecated
 export const insetInlineEnd: (value: string) => SerializedStyles;
 
 // @public @deprecated
 export const insetInlineStart: (value: string) => SerializedStyles;
+
+// @public
+export const invisible: SerializedStyles;
+
+// @public
+export const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
+    fontSize: string;
+    lineCount: number;
+    lineHeight: number;
+}) => SerializedStyles;
 
 // @public @deprecated
 export const marginBlock: (value: string) => SerializedStyles;
@@ -21,7 +63,10 @@ export const marginInline: (value: string) => SerializedStyles;
 // @public @deprecated
 export const paddingBlock: (value: string) => SerializedStyles;
 
-// @public @deprecated
-export const paddingInline: (value: string) => SerializedStyles;
+// @public
+export type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
+
+// @public
+export const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;
 
 ```
