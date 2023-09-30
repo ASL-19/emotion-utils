@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 /**
  * Hide element when pointer is fine
@@ -6,7 +6,7 @@ import { css } from "@emotion/react";
  * @public
  */
 
-const hiddenWhenPointerFine = css({
+const hiddenWhenPointerFine: SerializedStyles = css({
   "@media (pointer: fine)": {
     display: "none",
   },

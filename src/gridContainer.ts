@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 /**
  * Create grid container with provided `gap` (or separate `columnGap` and
@@ -24,7 +24,7 @@ const gridContainer = ({
       gap?: string;
       rowGap?: never;
     }
-)) => {
+)): SerializedStyles => {
   const resolvedColumnGap = columnGap ?? gap ?? 0;
   const resolvedRowGap = rowGap ?? gap ?? 0;
 

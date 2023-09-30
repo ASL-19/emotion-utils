@@ -6,7 +6,6 @@
 
 import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
-import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
 
 // @public
 export const devLabel: (label: string) => CSSObject | null;
@@ -22,22 +21,22 @@ export const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
     columnGap?: undefined;
     gap?: string | undefined;
     rowGap?: undefined;
-})) => SerializedStyles_2;
+})) => SerializedStyles;
 
 // @public
-export const hiddenWhenJs: SerializedStyles_2;
+export const hiddenWhenJs: SerializedStyles;
 
 // @public
-export const hiddenWhenNoJs: SerializedStyles_2;
+export const hiddenWhenNoJs: SerializedStyles;
 
 // @public
-export const hiddenWhenPointerCoarseOrNone: SerializedStyles_2;
+export const hiddenWhenPointerCoarseOrNone: SerializedStyles;
 
 // @public
-export const hiddenWhenPointerFine: SerializedStyles_2;
+export const hiddenWhenPointerFine: SerializedStyles;
 
 // @public
-export const hoverStyles: (styles: Styles) => SerializedStyles_2;
+export const hoverStyles: (styles: Styles) => SerializedStyles;
 
 // @public @deprecated
 export const insetInlineEnd: (value: string) => SerializedStyles;
@@ -46,14 +45,14 @@ export const insetInlineEnd: (value: string) => SerializedStyles;
 export const insetInlineStart: (value: string) => SerializedStyles;
 
 // @public
-export const invisible: SerializedStyles_2;
+export const invisible: SerializedStyles;
 
 // @public
 export const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
     fontSize: string;
     lineCount: number;
     lineHeight: number;
-}) => SerializedStyles_2;
+}) => SerializedStyles;
 
 // @public @deprecated
 export const marginBlock: (value: string) => SerializedStyles;
@@ -68,6 +67,6 @@ export const paddingBlock: (value: string) => SerializedStyles;
 export type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
 
 // @public
-export const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles_2;
+export const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;
 
 ```

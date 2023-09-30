@@ -13,5 +13,5 @@ lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
     fontSize: string;
     lineCount: number;
     lineHeight: number;
-}) => import("@emotion/utils").SerializedStyles
+}) => SerializedStyles
 ```

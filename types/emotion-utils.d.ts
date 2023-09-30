@@ -6,10 +6,9 @@
 
 import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
-import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
 
 /**
- * Returns CSSObject containing provided `label`, but only in development.
+ * Returns `CSSObject` containing provided `label`, but only in development.
  *
  * @remarks
  * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod,
@@ -34,35 +33,35 @@ export declare const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
     columnGap?: undefined;
     gap?: string | undefined;
     rowGap?: undefined;
-})) => SerializedStyles_2;
+})) => SerializedStyles;
 
 /**
  * Hidden element when javascript is enabled
  *
  * @public
  */
-export declare const hiddenWhenJs: SerializedStyles_2;
+export declare const hiddenWhenJs: SerializedStyles;
 
 /**
  * Hidden element when javascript is disabled
  *
  * @public
  */
-export declare const hiddenWhenNoJs: SerializedStyles_2;
+export declare const hiddenWhenNoJs: SerializedStyles;
 
 /**
  * Hide element when pointer is coarse or none
  *
  * @public
  */
-export declare const hiddenWhenPointerCoarseOrNone: SerializedStyles_2;
+export declare const hiddenWhenPointerCoarseOrNone: SerializedStyles;
 
 /**
  * Hide element when pointer is fine
  *
  * @public
  */
-export declare const hiddenWhenPointerFine: SerializedStyles_2;
+export declare const hiddenWhenPointerFine: SerializedStyles;
 
 /**
  * Apply provided styles on hover.
@@ -73,7 +72,7 @@ export declare const hiddenWhenPointerFine: SerializedStyles_2;
  *
  * @public
  */
-export declare const hoverStyles: (styles: Styles) => SerializedStyles_2;
+export declare const hoverStyles: (styles: Styles) => SerializedStyles;
 
 /**
  * Equivalent to the
@@ -100,7 +99,7 @@ export declare const insetInlineStart: (value: string) => SerializedStyles;
  *
  * @public
  */
-export declare const invisible: SerializedStyles_2;
+export declare const invisible: SerializedStyles;
 
 /**
  * Display ellipsis for overflow text
@@ -111,7 +110,7 @@ export declare const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
     fontSize: string;
     lineCount: number;
     lineHeight: number;
-}) => SerializedStyles_2;
+}) => SerializedStyles;
 
 /**
  * Equivalent to the
@@ -161,6 +160,6 @@ export declare type Styles = SerializedStyles | CSSObject | Array<SerializedStyl
 /**
  * Render hidden pseudo-element to pre-fill space taken up by bolded text (to
  * avoid layout shift)*/
-export declare const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles_2;
+export declare const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;
 
 export { }

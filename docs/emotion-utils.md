@@ -10,7 +10,7 @@ A collection of Emotion utility functions.
 
 |  Variable | Description |
 |  --- | --- |
-|  [devLabel](./emotion-utils.devlabel.md) | Returns CSSObject containing provided <code>label</code>, but only in development. |
+|  [devLabel](./emotion-utils.devlabel.md) | Returns <code>CSSObject</code> containing provided <code>label</code>, but only in development. |
 |  [gridContainer](./emotion-utils.gridcontainer.md) | Create grid container with provided <code>gap</code> (or separate <code>columnGap</code> and <code>rowGap</code> values). |
 |  [hiddenWhenJs](./emotion-utils.hiddenwhenjs.md) | Hidden element when javascript is enabled |
 |  [hiddenWhenNoJs](./emotion-utils.hiddenwhennojs.md) | Hidden element when javascript is disabled |

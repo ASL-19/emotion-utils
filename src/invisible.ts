@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 /**
  * Hide element
@@ -6,7 +6,7 @@ import { css } from "@emotion/react";
  * @public
  */
 
-const invisible = css({
+const invisible: SerializedStyles = css({
   clip: "rect(1px, 1px, 1px, 1px)",
   float: "none",
   height: "auto !important",

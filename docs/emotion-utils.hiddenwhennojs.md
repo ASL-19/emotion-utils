@@ -9,5 +9,5 @@ Hidden element when javascript is disabled
 **Signature:**
 
 ```typescript
-hiddenWhenNoJs: import("@emotion/utils").SerializedStyles
+hiddenWhenNoJs: SerializedStyles
 ```

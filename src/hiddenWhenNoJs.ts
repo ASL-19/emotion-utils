@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 /**
  * Hidden element when javascript is disabled
@@ -6,7 +6,7 @@ import { css } from "@emotion/react";
  * @public
  */
 
-const hiddenWhenNoJs = css({
+const hiddenWhenNoJs: SerializedStyles = css({
   "html:not(.js) &": {
     display: "none",
   },

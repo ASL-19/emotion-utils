@@ -11,5 +11,5 @@ Uses the `any-hover` media condition (rather than `hover`<!-- -->) so hover styl
 **Signature:**
 
 ```typescript
-hoverStyles: (styles: Styles) => import("@emotion/utils").SerializedStyles
+hoverStyles: (styles: Styles) => SerializedStyles
 ```

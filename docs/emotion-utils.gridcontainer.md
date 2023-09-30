@@ -19,5 +19,5 @@ gridContainer: ({ columnGap, columns, gap, rowGap, }: {
     columnGap?: undefined;
     gap?: string | undefined;
     rowGap?: undefined;
-})) => import("@emotion/utils").SerializedStyles
+})) => SerializedStyles
 ```

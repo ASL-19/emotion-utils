@@ -9,5 +9,5 @@ Hidden element when javascript is enabled
 **Signature:**
 
 ```typescript
-hiddenWhenJs: import("@emotion/utils").SerializedStyles
+hiddenWhenJs: SerializedStyles
 ```

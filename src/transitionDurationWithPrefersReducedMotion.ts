@@ -1,11 +1,11 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 /**
  * Render hidden pseudo-element to pre-fill space taken up by bolded text (to
  * avoid layout shift)*/
 const transitionDurationWithPrefersReducedMotion = (
   transitionDuration: string,
-) =>
+): SerializedStyles =>
   css(
     {
       transitionDuration,

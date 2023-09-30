@@ -9,5 +9,5 @@ Render hidden pseudo-element to pre-fill space taken up by bolded text (to avoid
 **Signature:**
 
 ```typescript
-transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => import("@emotion/utils").SerializedStyles
+transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles
 ```

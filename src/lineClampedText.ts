@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 /**
  * Display ellipsis for overflow text
@@ -14,7 +14,7 @@ const lineClampedText = ({
   fontSize: string;
   lineCount: number;
   lineHeight: number;
-}) =>
+}): SerializedStyles =>
   css({
     display: "-webkit-box",
     fontSize,

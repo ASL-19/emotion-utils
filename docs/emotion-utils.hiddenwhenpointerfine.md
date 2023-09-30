@@ -9,5 +9,5 @@ Hide element when pointer is fine
 **Signature:**
 
 ```typescript
-hiddenWhenPointerFine: import("@emotion/utils").SerializedStyles
+hiddenWhenPointerFine: SerializedStyles
 ```

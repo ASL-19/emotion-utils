@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css, SerializedStyles } from "@emotion/react";
 
 import Styles from "./Styles";
 
@@ -11,7 +11,7 @@ import Styles from "./Styles";
  *
  * @public
  */
-const hoverStyles = (styles: Styles) =>
+const hoverStyles = (styles: Styles): SerializedStyles =>
   css({
     "@media (any-hover: hover)": {
       "&:hover": styles,

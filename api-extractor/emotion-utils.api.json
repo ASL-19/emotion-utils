@@ -175,7 +175,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!devLabel:var",
-          "docComment": "/**\n * Returns CSSObject containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n */\n",
+          "docComment": "/**\n * Returns `CSSObject` containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -215,7 +215,7 @@
             },
             {
               "kind": "Content",
-              "text": "({ columnGap, columns, gap, rowGap, }: {\n    columns: number;\n} & ({\n    columnGap?: string | undefined;\n    gap?: undefined;\n    rowGap?: string | undefined;\n} | {\n    columnGap?: undefined;\n    gap?: string | undefined;\n    rowGap?: undefined;\n})) => import(\"@emotion/utils\")."
+              "text": "({ columnGap, columns, gap, rowGap, }: {\n    columns: number;\n} & ({\n    columnGap?: string | undefined;\n    gap?: undefined;\n    rowGap?: string | undefined;\n} | {\n    columnGap?: undefined;\n    gap?: string | undefined;\n    rowGap?: undefined;\n})) => "
             },
             {
               "kind": "Reference",
@@ -242,10 +242,6 @@
               "text": "hiddenWhenJs: "
             },
             {
-              "kind": "Content",
-              "text": "import(\"@emotion/utils\")."
-            },
-            {
               "kind": "Reference",
               "text": "SerializedStyles",
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
@@ -257,7 +253,7 @@
           "name": "hiddenWhenJs",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 3
+            "endIndex": 2
           }
         },
         {
@@ -268,10 +264,6 @@
             {
               "kind": "Content",
               "text": "hiddenWhenNoJs: "
-            },
-            {
-              "kind": "Content",
-              "text": "import(\"@emotion/utils\")."
             },
             {
               "kind": "Reference",
@@ -285,7 +277,7 @@
           "name": "hiddenWhenNoJs",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 3
+            "endIndex": 2
           }
         },
         {
@@ -296,10 +288,6 @@
             {
               "kind": "Content",
               "text": "hiddenWhenPointerCoarseOrNone: "
-            },
-            {
-              "kind": "Content",
-              "text": "import(\"@emotion/utils\")."
             },
             {
               "kind": "Reference",
@@ -313,7 +301,7 @@
           "name": "hiddenWhenPointerCoarseOrNone",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 3
+            "endIndex": 2
           }
         },
         {
@@ -324,10 +312,6 @@
             {
               "kind": "Content",
               "text": "hiddenWhenPointerFine: "
-            },
-            {
-              "kind": "Content",
-              "text": "import(\"@emotion/utils\")."
             },
             {
               "kind": "Reference",
@@ -341,7 +325,7 @@
           "name": "hiddenWhenPointerFine",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 3
+            "endIndex": 2
           }
         },
         {
@@ -364,7 +348,7 @@
             },
             {
               "kind": "Content",
-              "text": ") => import(\"@emotion/utils\")."
+              "text": ") => "
             },
             {
               "kind": "Reference",
@@ -447,10 +431,6 @@
               "text": "invisible: "
             },
             {
-              "kind": "Content",
-              "text": "import(\"@emotion/utils\")."
-            },
-            {
               "kind": "Reference",
               "text": "SerializedStyles",
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
@@ -462,7 +442,7 @@
           "name": "invisible",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 3
+            "endIndex": 2
           }
         },
         {
@@ -476,7 +456,7 @@
             },
             {
               "kind": "Content",
-              "text": "({ fontSize, lineCount, lineHeight, }: {\n    fontSize: string;\n    lineCount: number;\n    lineHeight: number;\n}) => import(\"@emotion/utils\")."
+              "text": "({ fontSize, lineCount, lineHeight, }: {\n    fontSize: string;\n    lineCount: number;\n    lineHeight: number;\n}) => "
             },
             {
               "kind": "Reference",
@@ -636,7 +616,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/styleTypes.ts",
+          "fileUrlPath": "src/Styles.ts",
           "releaseTag": "Public",
           "name": "Styles",
           "typeTokenRange": {
@@ -655,7 +635,7 @@
             },
             {
               "kind": "Content",
-              "text": "(transitionDuration: string) => import(\"@emotion/utils\")."
+              "text": "(transitionDuration: string) => "
             },
             {
               "kind": "Reference",

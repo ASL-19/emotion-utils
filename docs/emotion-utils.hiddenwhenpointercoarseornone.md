@@ -9,5 +9,5 @@ Hide element when pointer is coarse or none
 **Signature:**
 
 ```typescript
-hiddenWhenPointerCoarseOrNone: import("@emotion/utils").SerializedStyles
+hiddenWhenPointerCoarseOrNone: SerializedStyles
 ```

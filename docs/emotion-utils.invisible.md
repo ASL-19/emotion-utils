@@ -9,5 +9,5 @@ Hide element
 **Signature:**
 
 ```typescript
-invisible: import("@emotion/utils").SerializedStyles
+invisible: SerializedStyles
 ```

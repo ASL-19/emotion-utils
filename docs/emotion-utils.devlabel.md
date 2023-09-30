@@ -4,7 +4,7 @@
 
 ## devLabel variable
 
-Returns CSSObject containing provided `label`<!-- -->, but only in development.
+Returns `CSSObject` containing provided `label`<!-- -->, but only in development.
 
 **Signature:**
 
