@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+// @ts-expect-error (doesn’t need typing)
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 const eslintConfig = {

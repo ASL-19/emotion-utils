@@ -10,10 +10,25 @@ A collection of Emotion utility functions.
 
 |  Variable | Description |
 |  --- | --- |
+|  [devLabel](./emotion-utils.devlabel.md) | Returns <code>CSSObject</code> containing provided <code>label</code>, but only in development. |
+|  [gridContainer](./emotion-utils.gridcontainer.md) | Create grid container with provided <code>gap</code> (or separate <code>columnGap</code> and <code>rowGap</code> values). |
+|  [hiddenWhenJs](./emotion-utils.hiddenwhenjs.md) | Hide when JavaScript loaded. |
+|  [hiddenWhenNoJs](./emotion-utils.hiddenwhennojs.md) | Hide when JavaScript not loaded. |
+|  [hiddenWhenPointerCoarseOrNone](./emotion-utils.hiddenwhenpointercoarseornone.md) | Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is <code>coarse</code> or <code>none</code> (not <code>fine</code>). |
+|  [hiddenWhenPointerFine](./emotion-utils.hiddenwhenpointerfine.md) | Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is <code>fine</code> (not <code>coarse</code> or <code>none</code>). |
+|  [hoverStyles](./emotion-utils.hoverstyles.md) | Apply provided styles on hover. |
 |  [insetInlineEnd](./emotion-utils.insetinlineend.md) | Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property. |
 |  [insetInlineStart](./emotion-utils.insetinlinestart.md) | Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property. |
+|  [invisible](./emotion-utils.invisible.md) | Visually hide element while keeping it accessible to keyboard and screen reader navigation. |
+|  [lineClampedText](./emotion-utils.lineclampedtext.md) | Clamp with ellipsis when text extends past the provided number of lines. |
 |  [marginBlock](./emotion-utils.marginblock.md) | Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property. |
 |  [marginInline](./emotion-utils.margininline.md) | Equivalent to the [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline) CSS property. |
 |  [paddingBlock](./emotion-utils.paddingblock.md) | Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property. |
-|  [paddingInline](./emotion-utils.paddinginline.md) | Equivalent to the [padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline) CSS property. |
+|  [transitionDurationWithPrefersReducedMotion](./emotion-utils.transitiondurationwithprefersreducedmotion.md) | Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion. |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [Styles](./emotion-utils.styles.md) | Emotion <code>CSSObject</code> or <code>SerializedStyles</code> (or array containing them). |
 
