@@ -1,7 +1,9 @@
 {
   "extends": "@asl-19/shared-package-configs/tsconfig-esm.json",
   "compilerOptions": {
-    "outDir": "dist/esm"
+    "outDir": "dist/esm",
+    "jsx": "preserve",
+    "jsxImportSource": "@emotion/react"
   },
   "include": [
     "src/**/*.ts*"

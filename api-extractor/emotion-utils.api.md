@@ -5,7 +5,31 @@
 ```ts
 
 import { CSSObject } from '@emotion/react';
+import { FC } from 'react';
+import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
+import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
+
+// @public
+export const createMedia: <Breakpoints extends {
+    [name: string]: number;
+}>({ breakpoints, }: {
+    breakpoints: Breakpoints;
+}) => {
+    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {
+            gte?: Styles | undefined;
+            lt?: Styles | undefined;
+        } | undefined; }) => SerializedStyles_2;
+    DisplayAtWidth: FC<{
+        children: ReactNode;
+        greaterThanOrEqual: keyof Breakpoints;
+        lessThan?: undefined;
+    } | {
+        children: ReactNode;
+        greaterThanOrEqual?: undefined;
+        lessThan: keyof Breakpoints;
+    }>;
+};
 
 // @public
 export const devLabel: (label: string) => CSSObject | null;

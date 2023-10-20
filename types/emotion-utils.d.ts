@@ -5,7 +5,44 @@
  */
 
 import { CSSObject } from '@emotion/react';
+import { FC } from 'react';
+import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
+import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
+
+/**
+ * Apply styles when viewport width is greater than or equal to AND/OR less
+ * than the specified breakpoint.
+ *
+ * @public
+ */
+export declare const createMedia: <Breakpoints extends {
+    [name: string]: number;
+}>({ breakpoints, }: {
+    breakpoints: Breakpoints;
+}) => {
+    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {
+            /**
+             * Styles to apply when viewport width is greater than or equal to the
+             * specified breakpoint.
+             */
+            gte?: Styles | undefined;
+            /**
+             * Styles to apply when viewport width is less than the specified
+             * breakpoint.
+             */
+            lt?: Styles | undefined;
+        } | undefined; }) => SerializedStyles_2;
+    DisplayAtWidth: FC<{
+        children: ReactNode;
+        greaterThanOrEqual: keyof Breakpoints;
+        lessThan?: undefined;
+    } | {
+        children: ReactNode;
+        greaterThanOrEqual?: undefined;
+        lessThan: keyof Breakpoints;
+    }>;
+};
 
 /**
  * Returns `CSSObject` containing provided `label`, but only in development.
