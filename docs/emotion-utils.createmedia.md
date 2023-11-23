@@ -18,14 +18,10 @@ createMedia: <Breakpoints extends {
         gte?: Styles | undefined;
         lt?: Styles | undefined;
     } | undefined; }) => import("@emotion/utils").SerializedStyles;
-    DisplayAtWidth: FC<{
-        children: ReactNode;
-        greaterThanOrEqual: keyof Breakpoints;
-        lessThan?: undefined;
-    } | {
-        children: ReactNode;
-        greaterThanOrEqual?: undefined;
-        lessThan: keyof Breakpoints;
+    Media: import("react").ComponentType<import("@artsy/fresnel/dist/Media").MediaProps<keyof Breakpoints, never>>;
+    MediaContextProvider: import("react").ComponentType<import("@artsy/fresnel/dist/Media").MediaContextProviderProps<keyof Breakpoints> & {
+        children: import("react").ReactNode;
     }>;
+    mediaStyles: string;
 }
 ```

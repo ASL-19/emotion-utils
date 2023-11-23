@@ -4,8 +4,12 @@
 
 ```ts
 
+/// <reference types="react" />
+
+import { ComponentType } from 'react';
 import { CSSObject } from '@emotion/react';
-import { FC } from 'react';
+import { MediaContextProviderProps } from '@artsy/fresnel/dist/Media';
+import { MediaProps } from '@artsy/fresnel/dist/Media';
 import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
 import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
@@ -20,15 +24,11 @@ export const createMedia: <Breakpoints extends {
             gte?: Styles | undefined;
             lt?: Styles | undefined;
         } | undefined; }) => SerializedStyles_2;
-    DisplayAtWidth: FC<{
-        children: ReactNode;
-        greaterThanOrEqual: keyof Breakpoints;
-        lessThan?: undefined;
-    } | {
-        children: ReactNode;
-        greaterThanOrEqual?: undefined;
-        lessThan: keyof Breakpoints;
+    Media: ComponentType<MediaProps<keyof Breakpoints, never>>;
+    MediaContextProvider: ComponentType<MediaContextProviderProps<keyof Breakpoints> & {
+    children: ReactNode;
     }>;
+    mediaStyles: string;
 };
 
 // @public

@@ -1,8 +1,6 @@
+import { createMedia as fresnelCreateMedia } from "@artsy/fresnel";
 import { css } from "@emotion/react";
-import { FC, memo, ReactNode, useMemo } from "react";
-import React from "react";
 
-import devLabel from "./devLabel";
 import Styles from "./Styles";
 
 /**
@@ -59,62 +57,84 @@ const createMedia = <
       ),
     );
 
+  // [2023-11-20] TODO: Remove DisplayAtWidth and make this change in other
+  // projects if we don’t see any problems with @artsy/fresnel’s Media component
+  // with React 18.
+  //
+  // We implemented DisplayAtWidth as a replacement for Media since Fresnel was
+  // previously incompatible with React 18, but they finally found a solution
+  // recently: https://github.com/artsy/fresnel/pull/341
+
   // ======================
   // === DisplayAtWidth ===
   // ======================
-  const DisplayAtWidth: FC<
-    | {
-        children: ReactNode;
-        greaterThanOrEqual: keyof typeof breakpoints;
-        lessThan?: never;
-      }
-    | {
-        children: ReactNode;
-        greaterThanOrEqual?: never;
-        lessThan: keyof typeof breakpoints;
-      }
-  > = memo(({ children, greaterThanOrEqual, lessThan }) => {
-    const containerCss = useMemo(() => {
-      const displayContents = css({
-        display: "contents",
-      });
-      const displayNone = css({
-        display: "none",
-      });
 
-      return css(
-        devLabel("Media-containerCss"),
-        greaterThanOrEqual
-          ? // @ts-expect-error (TS insists greaterThanOrEqual is a string, but
-            // it’s actually keyof Breakpoints)
-            breakpointStyles({
-              [greaterThanOrEqual]: {
-                gte: displayContents,
-                lt: displayNone,
-              },
-            })
-          : lessThan
-          ? // @ts-expect-error (TS insists lessThan is a string, but it’s
-            // actually keyof Breakpoints)
-            breakpointStyles({
-              [lessThan]: {
-                gte: displayNone,
-                lt: displayContents,
-              },
-            })
-          : // This should never be reached
-            css({}),
-      );
-    }, [greaterThanOrEqual, lessThan]);
+  // const DisplayAtWidth: FC<
+  //   | {
+  //       children: ReactNode;
+  //       greaterThanOrEqual: keyof typeof breakpoints;
+  //       lessThan?: never;
+  //     }
+  //   | {
+  //       children: ReactNode;
+  //       greaterThanOrEqual?: never;
+  //       lessThan: keyof typeof breakpoints;
+  //     }
+  // > = memo(({ children, greaterThanOrEqual, lessThan }) => {
+  //   const containerCss = useMemo(() => {
+  //     const displayContents = css({
+  //       display: "contents",
+  //     });
+  //     const displayNone = css({
+  //       display: "none",
+  //     });
 
-    return <div css={containerCss}>{children}</div>;
-  });
+  //     return css(
+  //       devLabel("Media-containerCss"),
+  //       greaterThanOrEqual
+  //         ? // @ts-expect-error (TS insists greaterThanOrEqual is a string, but
+  //           // it’s actually keyof Breakpoints)
+  //           breakpointStyles({
+  //             [greaterThanOrEqual]: {
+  //               gte: displayContents,
+  //               lt: displayNone,
+  //             },
+  //           })
+  //         : lessThan
+  //         ? // @ts-expect-error (TS insists lessThan is a string, but it’s
+  //           // actually keyof Breakpoints)
+  //           breakpointStyles({
+  //             [lessThan]: {
+  //               gte: displayNone,
+  //               lt: displayContents,
+  //             },
+  //           })
+  //         : // This should never be reached
+  //           css({}),
+  //     );
+  //   }, [greaterThanOrEqual, lessThan]);
 
-  DisplayAtWidth.displayName = "DisplayAtWidth";
+  //   return <div css={containerCss}>{children}</div>;
+  // });
+
+  // DisplayAtWidth.displayName = "DisplayAtWidth";
+
+  // ===============
+  // === Fresnel ===
+  // ===============
+
+  const fresnelMedia = fresnelCreateMedia({ breakpoints });
+
+  const mediaStyles = fresnelMedia.createMediaStyle();
+
+  const { Media, MediaContextProvider } = fresnelMedia;
 
   return {
     breakpointStyles,
-    DisplayAtWidth,
+    // DisplayAtWidth,
+    Media,
+    MediaContextProvider,
+    mediaStyles,
   };
 };
 

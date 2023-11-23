@@ -210,16 +210,43 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    DisplayAtWidth: "
+              "text": ";\n    Media: import(\"react\")."
             },
             {
               "kind": "Reference",
-              "text": "FC",
-              "canonicalReference": "@types/react!React.FC:type"
+              "text": "ComponentType",
+              "canonicalReference": "@types/react!React.ComponentType:type"
             },
             {
               "kind": "Content",
-              "text": "<{\n        children: "
+              "text": "<import(\"@artsy/fresnel/dist/Media\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "MediaProps",
+              "canonicalReference": "@artsy/fresnel!MediaProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof Breakpoints, never>>;\n    MediaContextProvider: import(\"react\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentType",
+              "canonicalReference": "@types/react!React.ComponentType:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<import(\"@artsy/fresnel/dist/Media\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "MediaContextProviderProps",
+              "canonicalReference": "@artsy/fresnel!MediaContextProviderProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof Breakpoints> & {\n        children: import(\"react\")."
             },
             {
               "kind": "Reference",
@@ -228,16 +255,7 @@
             },
             {
               "kind": "Content",
-              "text": ";\n        greaterThanOrEqual: keyof Breakpoints;\n        lessThan?: undefined;\n    } | {\n        children: "
-            },
-            {
-              "kind": "Reference",
-              "text": "ReactNode",
-              "canonicalReference": "@types/react!React.ReactNode:type"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n        greaterThanOrEqual?: undefined;\n        lessThan: keyof Breakpoints;\n    }>;\n}"
+              "text": ";\n    }>;\n    mediaStyles: string;\n}"
             }
           ],
           "fileUrlPath": "src/createMedia.tsx",
@@ -246,7 +264,7 @@
           "name": "createMedia",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 14
+            "endIndex": 18
           }
         },
         {
