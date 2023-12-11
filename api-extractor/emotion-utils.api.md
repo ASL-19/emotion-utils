@@ -4,32 +4,21 @@
 
 ```ts
 
-/// <reference types="react" />
-
-import { ComponentType } from 'react';
 import { CSSObject } from '@emotion/react';
-import { MediaContextProviderProps } from '@artsy/fresnel/dist/Media';
-import { MediaProps } from '@artsy/fresnel/dist/Media';
-import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
-import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
 
 // @public
-export const createMedia: <Breakpoints extends {
+export const createBreakpointStyles: <Breakpoints extends {
     [name: string]: number;
 }>({ breakpoints, }: {
     breakpoints: Breakpoints;
-}) => {
-    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {
-            gte?: Styles | undefined;
-            lt?: Styles | undefined;
-        } | undefined; }) => SerializedStyles_2;
-    Media: ComponentType<MediaProps<keyof Breakpoints, never>>;
-    MediaContextProvider: ComponentType<MediaContextProviderProps<keyof Breakpoints> & {
-    children: ReactNode;
-    }>;
-    mediaStyles: string;
-};
+}) => (args: { [Breakpoint in keyof Breakpoints]?: {
+        gte: Styles;
+        lt?: Styles | undefined;
+    } | {
+        gte?: Styles | undefined;
+        lt: Styles;
+    } | undefined; }) => SerializedStyles;
 
 // @public
 export const devLabel: (label: string) => CSSObject | null;

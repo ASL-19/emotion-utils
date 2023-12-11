@@ -174,16 +174,16 @@
       "members": [
         {
           "kind": "Variable",
-          "canonicalReference": "@asl-19/emotion-utils!createMedia:var",
-          "docComment": "/**\n * Apply styles when viewport width is greater than or equal to AND/OR less than the specified breakpoint.\n *\n * @public\n */\n",
+          "canonicalReference": "@asl-19/emotion-utils!createBreakpointStyles:var",
+          "docComment": "/**\n * Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints.\n *\n * @remarks\n *\n * The returned function’s args can only accept keys from the provided `breakpoints`.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "createMedia: "
+              "text": "createBreakpointStyles: "
             },
             {
               "kind": "Content",
-              "text": "<Breakpoints extends {\n    [name: string]: number;\n}>({ breakpoints, }: {\n    breakpoints: Breakpoints;\n}) => {\n    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {\n        gte?: "
+              "text": "<Breakpoints extends {\n    [name: string]: number;\n}>({ breakpoints, }: {\n    breakpoints: Breakpoints;\n}) => (args: { [Breakpoint in keyof Breakpoints]?: {\n    gte: "
             },
             {
               "kind": "Reference",
@@ -192,7 +192,7 @@
             },
             {
               "kind": "Content",
-              "text": " | undefined;\n        lt?: "
+              "text": ";\n    lt?: "
             },
             {
               "kind": "Reference",
@@ -201,70 +201,39 @@
             },
             {
               "kind": "Content",
-              "text": " | undefined;\n    } | undefined; }) => import(\"@emotion/utils\")."
+              "text": " | undefined;\n} | {\n    gte?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n    lt: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n} | undefined; }) => "
             },
             {
               "kind": "Reference",
               "text": "SerializedStyles",
               "canonicalReference": "@emotion/utils!SerializedStyles:interface"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n    Media: import(\"react\")."
-            },
-            {
-              "kind": "Reference",
-              "text": "ComponentType",
-              "canonicalReference": "@types/react!React.ComponentType:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<import(\"@artsy/fresnel/dist/Media\")."
-            },
-            {
-              "kind": "Reference",
-              "text": "MediaProps",
-              "canonicalReference": "@artsy/fresnel!MediaProps:interface"
-            },
-            {
-              "kind": "Content",
-              "text": "<keyof Breakpoints, never>>;\n    MediaContextProvider: import(\"react\")."
-            },
-            {
-              "kind": "Reference",
-              "text": "ComponentType",
-              "canonicalReference": "@types/react!React.ComponentType:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<import(\"@artsy/fresnel/dist/Media\")."
-            },
-            {
-              "kind": "Reference",
-              "text": "MediaContextProviderProps",
-              "canonicalReference": "@artsy/fresnel!MediaContextProviderProps:interface"
-            },
-            {
-              "kind": "Content",
-              "text": "<keyof Breakpoints> & {\n        children: import(\"react\")."
-            },
-            {
-              "kind": "Reference",
-              "text": "ReactNode",
-              "canonicalReference": "@types/react!React.ReactNode:type"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n    }>;\n    mediaStyles: string;\n}"
             }
           ],
-          "fileUrlPath": "src/createMedia.tsx",
+          "fileUrlPath": "src/createBreakpointStyles.ts",
           "isReadonly": true,
           "releaseTag": "Public",
-          "name": "createMedia",
+          "name": "createBreakpointStyles",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 18
+            "endIndex": 11
           }
         },
         {

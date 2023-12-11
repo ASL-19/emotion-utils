@@ -17,7 +17,7 @@ export { default as invisible } from "./invisible";
 export { default as lineClampedText } from "./lineClampedText";
 export { default as marginBlock } from "./marginBlock";
 export { default as marginInline } from "./marginInline";
-export { default as createMedia } from "./createMedia";
+export { default as createBreakpointStyles } from "./createBreakpointStyles";
 export { default as paddingBlock } from "./paddingBlock";
 export { default as transitionDurationWithPrefersReducedMotion } from "./transitionDurationWithPrefersReducedMotion";
 export { default as Styles } from "./Styles";

@@ -10,7 +10,7 @@ A collection of Emotion utility functions.
 
 |  Variable | Description |
 |  --- | --- |
-|  [createMedia](./emotion-utils.createmedia.md) | Apply styles when viewport width is greater than or equal to AND/OR less than the specified breakpoint. |
+|  [createBreakpointStyles](./emotion-utils.createbreakpointstyles.md) | Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints. |
 |  [devLabel](./emotion-utils.devlabel.md) | Returns <code>CSSObject</code> containing provided <code>label</code>, but only in development. |
 |  [gridContainer](./emotion-utils.gridcontainer.md) | Create grid container with provided <code>gap</code> (or separate <code>columnGap</code> and <code>rowGap</code> values). |
 |  [hiddenWhenJs](./emotion-utils.hiddenwhenjs.md) | Hide when JavaScript loaded. |

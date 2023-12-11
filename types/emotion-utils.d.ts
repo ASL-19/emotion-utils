@@ -4,45 +4,30 @@
  * @packageDocumentation
  */
 
-/// <reference types="react" />
-
-import { ComponentType } from 'react';
 import { CSSObject } from '@emotion/react';
-import { MediaContextProviderProps } from '@artsy/fresnel/dist/Media';
-import { MediaProps } from '@artsy/fresnel/dist/Media';
-import { ReactNode } from 'react';
 import { SerializedStyles } from '@emotion/react';
-import { SerializedStyles as SerializedStyles_2 } from '@emotion/utils';
 
 /**
- * Apply styles when viewport width is greater than or equal to AND/OR less
- * than the specified breakpoint.
+ * Create function that applies styles when viewport width is greater than or
+ * equal to and/or less than the specified breakpoints.
+ *
+ * @remarks
+ * The returned function’s args can only accept keys from the provided
+ * `breakpoints`.
  *
  * @public
  */
-export declare const createMedia: <Breakpoints extends {
+export declare const createBreakpointStyles: <Breakpoints extends {
     [name: string]: number;
 }>({ breakpoints, }: {
     breakpoints: Breakpoints;
-}) => {
-    breakpointStyles: (args: { [Breakpoint in keyof Breakpoints]?: {
-            /**
-             * Styles to apply when viewport width is greater than or equal to the
-             * specified breakpoint.
-             */
-            gte?: Styles | undefined;
-            /**
-             * Styles to apply when viewport width is less than the specified
-             * breakpoint.
-             */
-            lt?: Styles | undefined;
-        } | undefined; }) => SerializedStyles_2;
-    Media: ComponentType<MediaProps<keyof Breakpoints, never>>;
-    MediaContextProvider: ComponentType<MediaContextProviderProps<keyof Breakpoints> & {
-    children: ReactNode;
-    }>;
-    mediaStyles: string;
-};
+}) => (args: { [Breakpoint in keyof Breakpoints]?: {
+        gte: Styles;
+        lt?: Styles | undefined;
+    } | {
+        gte?: Styles | undefined;
+        lt: Styles;
+    } | undefined; }) => SerializedStyles;
 
 /**
  * Returns `CSSObject` containing provided `label`, but only in development.
