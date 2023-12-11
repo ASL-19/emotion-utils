@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.37.2",
+    "toolVersion": "7.38.5",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -172,6 +172,70 @@
       "name": "",
       "preserveMemberOrder": false,
       "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!createBreakpointStyles:var",
+          "docComment": "/**\n * Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints.\n *\n * @remarks\n *\n * The returned function’s args can only accept keys from the provided `breakpoints`.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createBreakpointStyles: "
+            },
+            {
+              "kind": "Content",
+              "text": "<Breakpoints extends {\n    [name: string]: number;\n}>({ breakpoints, }: {\n    breakpoints: Breakpoints;\n}) => (args: { [Breakpoint in keyof Breakpoints]?: {\n    gte: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    lt?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n} | {\n    gte?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n    lt: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n} | undefined; }) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/createBreakpointStyles.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "createBreakpointStyles",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!devLabel:var",
