@@ -63,5 +63,8 @@
   },
   "peerDependencies": {
     "@emotion/react": "^11.11.1"
+  },
+  "overrides": {
+    "csstype": "3.0.11"
   }
 }
