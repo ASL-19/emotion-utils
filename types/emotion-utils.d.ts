@@ -8,6 +8,28 @@ import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
 
 /**
+ * Create function that applies styles when viewport width is greater than or
+ * equal to and/or less than the specified breakpoints.
+ *
+ * @remarks
+ * The returned function’s args can only accept keys from the provided
+ * `breakpoints`.
+ *
+ * @public
+ */
+export declare const createBreakpointStyles: <Breakpoints extends {
+    [name: string]: number;
+}>({ breakpoints, }: {
+    breakpoints: Breakpoints;
+}) => (args: { [Breakpoint in keyof Breakpoints]?: {
+        gte: Styles;
+        lt?: Styles | undefined;
+    } | {
+        gte?: Styles | undefined;
+        lt: Styles;
+    } | undefined; }) => SerializedStyles;
+
+/**
  * Returns `CSSObject` containing provided `label`, but only in development.
  *
  * @remarks

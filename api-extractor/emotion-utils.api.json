@@ -174,6 +174,70 @@
       "members": [
         {
           "kind": "Variable",
+          "canonicalReference": "@asl-19/emotion-utils!createBreakpointStyles:var",
+          "docComment": "/**\n * Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints.\n *\n * @remarks\n *\n * The returned function’s args can only accept keys from the provided `breakpoints`.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "createBreakpointStyles: "
+            },
+            {
+              "kind": "Content",
+              "text": "<Breakpoints extends {\n    [name: string]: number;\n}>({ breakpoints, }: {\n    breakpoints: Breakpoints;\n}) => (args: { [Breakpoint in keyof Breakpoints]?: {\n    gte: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    lt?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n} | {\n    gte?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": " | undefined;\n    lt: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Styles",
+              "canonicalReference": "@asl-19/emotion-utils!Styles:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n} | undefined; }) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializedStyles",
+              "canonicalReference": "@emotion/utils!SerializedStyles:interface"
+            }
+          ],
+          "fileUrlPath": "src/createBreakpointStyles.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "createBreakpointStyles",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!devLabel:var",
           "docComment": "/**\n * Returns `CSSObject` containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n */\n",
           "excerptTokens": [

@@ -8,6 +8,19 @@ import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
 
 // @public
+export const createBreakpointStyles: <Breakpoints extends {
+    [name: string]: number;
+}>({ breakpoints, }: {
+    breakpoints: Breakpoints;
+}) => (args: { [Breakpoint in keyof Breakpoints]?: {
+        gte: Styles;
+        lt?: Styles | undefined;
+    } | {
+        gte?: Styles | undefined;
+        lt: Styles;
+    } | undefined; }) => SerializedStyles;
+
+// @public
 export const devLabel: (label: string) => CSSObject | null;
 
 // @public

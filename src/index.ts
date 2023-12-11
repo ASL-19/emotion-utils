@@ -4,6 +4,7 @@
  * @packageDocumentation
  */
 
+export { default as createBreakpointStyles } from "./createBreakpointStyles";
 export { default as devLabel } from "./devLabel";
 export { default as gridContainer } from "./gridContainer";
 export { default as hiddenWhenJs } from "./hiddenWhenJs";
