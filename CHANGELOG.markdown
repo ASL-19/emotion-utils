@@ -1,5 +1,12 @@
 # @asl-19/emotion-utils changelog
 
+## [0.6.0](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A0.6.0+is%3Apr) [2023-12-11]
+
+### Changes
+
+- Added `createBreakpointStyles` [[#26](https://github.com/ASL-19/emotion-utils/pull/26)]
+- Updated dependencies [[#28](https://github.com/ASL-19/emotion-utils/pull/28)]
+
 ## [0.5.0](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A0.5.0+is%3Apr) [2023-09-30]
 
 ### Changes
