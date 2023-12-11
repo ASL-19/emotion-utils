@@ -7,6 +7,6 @@
     "src/**/*.ts*"
   ],
   "compilerOptions": {
-    "jsx": "preserve"
+    "outDir": "dist"
   }
 }
