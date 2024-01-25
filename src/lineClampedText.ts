@@ -26,7 +26,7 @@ const lineClampedText = ({
     overflow: "hidden",
     textOverflow: "ellipsis",
     WebkitBoxOrient: "vertical",
-    WebkitLineClamp: "lineCount",
+    WebkitLineClamp: lineCount,
   });
 
 export default lineClampedText;
