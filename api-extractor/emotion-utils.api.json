@@ -512,7 +512,7 @@
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/emotion-utils!lineClampedText:var",
-          "docComment": "/**\n * Clamp with ellipsis when text extends past the provided number of lines.\n *\n * @remarks\n *\n * The box will always have a height equivalent to `lineCount` * `lineHeight` * `fontSize`. This is necessary to ensure the overflow is cut off at the correct vertical position.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Clamp with ellipsis when text extends past the provided number of lines.\n *\n * @remarks\n *\n * By default the box will have a fixed height equivalent calculated using `fontSize`, `lineCount`, and `lineHeight`. This can be overridden by passing `height: \"auto\"` (more details in `height` argument docstring).\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -520,7 +520,7 @@
             },
             {
               "kind": "Content",
-              "text": "({ fontSize, lineCount, lineHeight, }: {\n    fontSize: string;\n    lineCount: number;\n    lineHeight: number;\n}) => "
+              "text": "({ fontSize, height, lineCount, lineHeight, }: {\n    fontSize: string;\n    height?: \"auto\" | \"fixed\" | undefined;\n    lineCount: number;\n    lineHeight: number;\n}) => "
             },
             {
               "kind": "Reference",
