@@ -1,5 +1,11 @@
 # @asl-19/emotion-utils changelog
 
+## [0.6.2](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A0.6.2+is%3Apr) [2024-01-25]
+
+### Changes
+
+- In `lineClampedText` add optional `height` argument (with new `"auto"` value) and `lineHeight` style (via internal project) [[#32](https://github.com/ASL-19/emotion-utils/pull/32)]
+
 ## [0.6.1](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A0.6.1+is%3Apr) [2024-01-25]
 
 ### Fixes
