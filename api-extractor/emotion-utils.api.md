@@ -61,8 +61,9 @@ export const insetInlineStart: (value: string) => SerializedStyles;
 export const invisible: SerializedStyles;
 
 // @public
-export const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
+export const lineClampedText: ({ fontSize, height, lineCount, lineHeight, }: {
     fontSize: string;
+    height?: "auto" | "fixed" | undefined;
     lineCount: number;
     lineHeight: number;
 }) => SerializedStyles;

@@ -144,14 +144,30 @@ export declare const invisible: SerializedStyles;
  * Clamp with ellipsis when text extends past the provided number of lines.
  *
  * @remarks
- * The box will always have a height equivalent to `lineCount` * `lineHeight` *
- * `fontSize`. This is necessary to ensure the overflow is cut off at the
- * correct vertical position.
+ * By default the box will have a fixed height equivalent calculated using
+ * `fontSize`, `lineCount`, and `lineHeight`. This can be overridden by passing
+ * `height: "auto"` (more details in `height` argument docstring).
  *
  * @public
  */
-export declare const lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
+export declare const lineClampedText: ({ fontSize, height, lineCount, lineHeight, }: {
     fontSize: string;
+    /**
+     * Values:
+     *
+     * - `"fixed"` (default): The resolved `height` will be calculated based on
+     *   `fontSize`, `lineCount`, and `lineHeight`.
+     *
+     *   The element will always take up the same amount of vertical space, which
+     *   is good for layouts where vertical alignment is important.
+     *
+     * - `"auto"`: The resolved `height` will be `auto`.
+     *
+     *   The element’s height will be fully dynamic (based on its content), but
+     *   still constrained to `lineCount`. This is good for layouts where vertical
+     *   rhythm is more important than vertical alignment.
+     */
+    height?: "auto" | "fixed" | undefined;
     lineCount: number;
     lineHeight: number;
 }) => SerializedStyles;

@@ -9,8 +9,9 @@ Clamp with ellipsis when text extends past the provided number of lines.
 **Signature:**
 
 ```typescript
-lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
+lineClampedText: ({ fontSize, height, lineCount, lineHeight, }: {
     fontSize: string;
+    height?: "auto" | "fixed" | undefined;
     lineCount: number;
     lineHeight: number;
 }) => SerializedStyles
@@ -18,5 +19,5 @@ lineClampedText: ({ fontSize, lineCount, lineHeight, }: {
 
 ## Remarks
 
-The box will always have a height equivalent to `lineCount` \* `lineHeight` \* `fontSize`<!-- -->. This is necessary to ensure the overflow is cut off at the correct vertical position.
+By default the box will have a fixed height equivalent calculated using `fontSize`<!-- -->, `lineCount`<!-- -->, and `lineHeight`<!-- -->. This can be overridden by passing `height: "auto"` (more details in `height` argument docstring).
 
