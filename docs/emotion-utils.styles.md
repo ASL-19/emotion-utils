@@ -9,7 +9,7 @@ Emotion `CSSObject` or `SerializedStyles` (or array containing them).
 **Signature:**
 
 ```typescript
-type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
+type Styles = Array<CSSObject | SerializedStyles> | CSSObject | SerializedStyles;
 ```
 
 ## Remarks

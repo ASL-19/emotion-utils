@@ -2,25 +2,61 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [createBreakpointStyles](./emotion-utils.createbreakpointstyles.md)
 
-## createBreakpointStyles variable
+## createBreakpointStyles() function
 
 Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints.
 
 **Signature:**
 
 ```typescript
-createBreakpointStyles: <Breakpoints extends {
-    [name: string]: number;
-}>({ breakpoints, }: {
+createBreakpointStyles: <Breakpoints extends Record<string, number>>({ breakpoints, }: {
     breakpoints: Breakpoints;
 }) => (args: { [Breakpoint in keyof Breakpoints]?: {
     gte: Styles;
-    lt?: Styles | undefined;
+    lt?: Styles;
 } | {
-    gte?: Styles | undefined;
+    gte?: Styles;
     lt: Styles;
-} | undefined; }) => SerializedStyles
+}; }) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ breakpoints, }
+
+
+</td><td>
+
+{ breakpoints: Breakpoints; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+(args: { \[Breakpoint in keyof Breakpoints\]?: { gte: [Styles](./emotion-utils.styles.md)<!-- -->; lt?: [Styles](./emotion-utils.styles.md)<!-- -->; } \| { gte?: [Styles](./emotion-utils.styles.md)<!-- -->; lt: [Styles](./emotion-utils.styles.md)<!-- -->; }; }) =&gt; SerializedStyles
 
 ## Remarks
 

@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [paddingBlock](./emotion-utils.paddingblock.md)
 
-## paddingBlock variable
+## paddingBlock() function
 
 > Warning: This API is now obsolete.
 > 
@@ -16,3 +16,42 @@ Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/C
 ```typescript
 paddingBlock: (value: string) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+SerializedStyles
+

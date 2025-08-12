@@ -17,17 +17,15 @@ import { SerializedStyles } from '@emotion/react';
  *
  * @public
  */
-export declare const createBreakpointStyles: <Breakpoints extends {
-    [name: string]: number;
-}>({ breakpoints, }: {
+export declare const createBreakpointStyles: <Breakpoints extends Record<string, number>>({ breakpoints, }: {
     breakpoints: Breakpoints;
 }) => (args: { [Breakpoint in keyof Breakpoints]?: {
         gte: Styles;
-        lt?: Styles | undefined;
+        lt?: Styles;
     } | {
-        gte?: Styles | undefined;
+        gte?: Styles;
         lt: Styles;
-    } | undefined; }) => SerializedStyles;
+    }; }) => SerializedStyles;
 
 /**
  * Returns `CSSObject` containing provided `label`, but only in development.
@@ -48,13 +46,13 @@ export declare const devLabel: (label: string) => CSSObject | null;
 export declare const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
     columns: number;
 } & ({
-    columnGap?: string | undefined;
-    gap?: undefined;
-    rowGap?: string | undefined;
+    columnGap?: never;
+    gap?: string;
+    rowGap?: never;
 } | {
-    columnGap?: undefined;
-    gap?: string | undefined;
-    rowGap?: undefined;
+    columnGap?: string;
+    gap?: never;
+    rowGap?: string;
 })) => SerializedStyles;
 
 /**
@@ -167,7 +165,7 @@ export declare const lineClampedText: ({ fontSize, height, lineCount, lineHeight
      *   still constrained to `lineCount`. This is good for layouts where vertical
      *   rhythm is more important than vertical alignment.
      */
-    height?: "auto" | "fixed" | undefined;
+    height?: "auto" | "fixed";
     lineCount: number;
     lineHeight: number;
 }) => SerializedStyles;
@@ -219,7 +217,7 @@ export declare const paddingBlock: (value: string) => SerializedStyles;
  *
  * @public
  */
-export declare type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
+export declare type Styles = Array<CSSObject | SerializedStyles> | CSSObject | SerializedStyles;
 
 /**
  * Set a transition duration with override to 0 if the user has enabled an

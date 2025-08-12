@@ -3,10 +3,12 @@
   "include": [
     "*.js",
     "*.ts",
-    ".eslintrc.js",
+    "*.mjs",
     "src/**/*.ts*"
   ],
+
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "moduleResolution": "Bundler"
   }
 }

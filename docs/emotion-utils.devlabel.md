@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [devLabel](./emotion-utils.devlabel.md)
 
-## devLabel variable
+## devLabel() function
 
 Returns `CSSObject` containing provided `label`<!-- -->, but only in development.
 
@@ -11,6 +11,44 @@ Returns `CSSObject` containing provided `label`<!-- -->, but only in development
 ```typescript
 devLabel: (label: string) => CSSObject | null
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+label
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+CSSObject \| null
 
 ## Remarks
 

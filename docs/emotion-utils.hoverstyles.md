@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [hoverStyles](./emotion-utils.hoverstyles.md)
 
-## hoverStyles variable
+## hoverStyles() function
 
 Apply provided styles on hover.
 
@@ -11,6 +11,44 @@ Apply provided styles on hover.
 ```typescript
 hoverStyles: (styles: Styles) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+styles
+
+
+</td><td>
+
+[Styles](./emotion-utils.styles.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+SerializedStyles
 
 ## Remarks
 

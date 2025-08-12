@@ -43,7 +43,6 @@
 - Deprecated some CSS logical property utilities [[#16](https://github.com/ASL-19/emotion-utils/pull/16)]:
 
   Deprecated the following:
-
   - borderInlineEndWidth
   - borderInlineStartWidth
   - marginInlineEnd

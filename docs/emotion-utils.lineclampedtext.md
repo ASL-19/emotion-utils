@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [lineClampedText](./emotion-utils.lineclampedtext.md)
 
-## lineClampedText variable
+## lineClampedText() function
 
 Clamp with ellipsis when text extends past the provided number of lines.
 
@@ -11,11 +11,49 @@ Clamp with ellipsis when text extends past the provided number of lines.
 ```typescript
 lineClampedText: ({ fontSize, height, lineCount, lineHeight, }: {
     fontSize: string;
-    height?: "auto" | "fixed" | undefined;
+    height?: "auto" | "fixed";
     lineCount: number;
     lineHeight: number;
 }) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ fontSize, height, lineCount, lineHeight, }
+
+
+</td><td>
+
+{ fontSize: string; height?: "auto" \| "fixed"; lineCount: number; lineHeight: number; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+SerializedStyles
 
 ## Remarks
 

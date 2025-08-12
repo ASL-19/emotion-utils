@@ -6,7 +6,27 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@asl-19/emotion-utils](./emotion-utils.md) | A collection of Emotion utility functions. |
+<table><thead><tr><th>
+
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@asl-19/emotion-utils](./emotion-utils.md)
+
+
+</td><td>
+
+A collection of Emotion utility functions.
+
+
+</td></tr>
+</tbody></table>
 

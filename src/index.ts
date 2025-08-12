@@ -19,5 +19,5 @@ export { default as lineClampedText } from "./lineClampedText";
 export { default as marginBlock } from "./marginBlock";
 export { default as marginInline } from "./marginInline";
 export { default as paddingBlock } from "./paddingBlock";
-export { default as transitionDurationWithPrefersReducedMotion } from "./transitionDurationWithPrefersReducedMotion";
 export { default as Styles } from "./Styles";
+export { default as transitionDurationWithPrefersReducedMotion } from "./transitionDurationWithPrefersReducedMotion";
