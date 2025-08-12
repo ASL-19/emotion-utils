@@ -19,7 +19,7 @@
   "repository": "ASL-19/emotion-utils",
   "files": [
     "dist/**/*.js",
-    "types/**/*.d.ts"
+    "dist/**/*.d.ts"
   ],
   "exports": {
     "types": "./dist/index.d.ts",
