@@ -7,12 +7,10 @@ import { CSSObject } from "@emotion/react";
  * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod,
  * so we should use this utility to avoid long (and potentially CPU expensive?)
  * generated `className`s in production.
+ *
+ * @public
  */
 const devLabel = (label: string) =>
-  process.env.NODE_ENV === "development"
-    ? ({
-        label,
-      } as CSSObject)
-    : null;
+  process.env.NODE_ENV === "development" ? ({ label } as CSSObject) : null;
 
 export default devLabel;

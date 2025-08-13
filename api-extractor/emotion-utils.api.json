@@ -283,7 +283,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@asl-19/emotion-utils!devLabel:function(1)",
-          "docComment": "/**\n * Returns `CSSObject` containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n */\n",
+          "docComment": "/**\n * Returns `CSSObject` containing provided `label`, but only in development.\n *\n * @remarks\n *\n * Emotion’s `css` prop transform doesn’t strip manually added `label`s in prod, so we should use this utility to avoid long (and potentially CPU expensive?) generated `className`s in production.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

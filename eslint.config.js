@@ -1,17 +1,13 @@
-// We should be able to remove the @ts-expect-error and eslint-disable-next-line
-// once we fix the typing of @asl-19/eslint-config
-
 import asl19 from "@asl-19/eslint-config";
 import { defineConfig } from "eslint/config";
 
+// TODO: Remove once @asl-19/eslint-config is fixed
 const typedAsl19 = /** @type {import("@asl-19/eslint-config")["default"]} */ (
   asl19
 );
 
 const eslintConfig = defineConfig([
-  {
-    ignores: ["dist/", "types/", ".yalc/"],
-  },
+  { ignores: ["dist/", ".yalc/"] },
   {
     extends: [
       typedAsl19.base, // (for all projects)
