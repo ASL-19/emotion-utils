@@ -4,20 +4,20 @@
  * @packageDocumentation
  */
 
-export { default as createBreakpointStyles } from "./createBreakpointStyles";
-export { default as devLabel } from "./devLabel";
-export { default as gridContainer } from "./gridContainer";
-export { default as hiddenWhenJs } from "./hiddenWhenJs";
-export { default as hiddenWhenNoJs } from "./hiddenWhenNoJs";
-export { default as hiddenWhenPointerCoarseOrNone } from "./hiddenWhenPointerCoarseOrNone";
-export { default as hiddenWhenPointerFine } from "./hiddenWhenPointerFine";
-export { default as hoverStyles } from "./hoverStyles";
-export { default as insetInlineEnd } from "./insetInlineEnd";
-export { default as insetInlineStart } from "./insetInlineStart";
-export { default as invisible } from "./invisible";
-export { default as lineClampedText } from "./lineClampedText";
-export { default as marginBlock } from "./marginBlock";
-export { default as marginInline } from "./marginInline";
-export { default as paddingBlock } from "./paddingBlock";
-export { default as Styles } from "./Styles";
-export { default as transitionDurationWithPrefersReducedMotion } from "./transitionDurationWithPrefersReducedMotion";
+export { default as createBreakpointStyles } from "./createBreakpointStyles.js";
+export { default as devLabel } from "./devLabel.js";
+export { default as gridContainer } from "./gridContainer.js";
+export { default as hiddenWhenJs } from "./hiddenWhenJs.js";
+export { default as hiddenWhenNoJs } from "./hiddenWhenNoJs.js";
+export { default as hiddenWhenPointerCoarseOrNone } from "./hiddenWhenPointerCoarseOrNone.js";
+export { default as hiddenWhenPointerFine } from "./hiddenWhenPointerFine.js";
+export { default as hoverStyles } from "./hoverStyles.js";
+export { default as insetInlineEnd } from "./insetInlineEnd.js";
+export { default as insetInlineStart } from "./insetInlineStart.js";
+export { default as invisible } from "./invisible.js";
+export { default as lineClampedText } from "./lineClampedText.js";
+export { default as marginBlock } from "./marginBlock.js";
+export { default as marginInline } from "./marginInline.js";
+export { default as paddingBlock } from "./paddingBlock.js";
+export { default as Styles } from "./Styles.js";
+export { default as transitionDurationWithPrefersReducedMotion } from "./transitionDurationWithPrefersReducedMotion.js";

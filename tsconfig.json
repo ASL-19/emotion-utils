@@ -10,8 +10,7 @@
     "checkJs": true,
     "declaration": true,
     "incremental": true,
-    "module": "esnext",
-    "moduleResolution": "Bundler",
+    "module": "preserve",
     "outDir": "dist",
     "strict": true,
     "target": "es2021"
