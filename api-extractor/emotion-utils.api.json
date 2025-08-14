@@ -248,7 +248,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/createBreakpointStyles.ts",
+          "fileUrlPath": "dist/createBreakpointStyles.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 6,
             "endIndex": 16
@@ -307,7 +307,7 @@
               "text": " | null"
             }
           ],
-          "fileUrlPath": "src/devLabel.ts",
+          "fileUrlPath": "dist/devLabel.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 5
@@ -349,7 +349,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/gridContainer.ts",
+          "fileUrlPath": "dist/gridContainer.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -383,7 +383,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/hiddenWhenJs.ts",
+          "fileUrlPath": "dist/hiddenWhenJs.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "hiddenWhenJs",
@@ -407,7 +407,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/hiddenWhenNoJs.ts",
+          "fileUrlPath": "dist/hiddenWhenNoJs.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "hiddenWhenNoJs",
@@ -431,7 +431,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/hiddenWhenPointerCoarseOrNone.ts",
+          "fileUrlPath": "dist/hiddenWhenPointerCoarseOrNone.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "hiddenWhenPointerCoarseOrNone",
@@ -455,7 +455,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/hiddenWhenPointerFine.ts",
+          "fileUrlPath": "dist/hiddenWhenPointerFine.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "hiddenWhenPointerFine",
@@ -488,7 +488,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/hoverStyles.ts",
+          "fileUrlPath": "dist/hoverStyles.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -530,7 +530,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/insetInlineEnd.ts",
+          "fileUrlPath": "dist/insetInlineEnd.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -572,7 +572,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/insetInlineStart.ts",
+          "fileUrlPath": "dist/insetInlineStart.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -606,7 +606,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/invisible.ts",
+          "fileUrlPath": "dist/invisible.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "invisible",
@@ -638,7 +638,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/lineClampedText.ts",
+          "fileUrlPath": "dist/lineClampedText.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -680,7 +680,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/marginBlock.ts",
+          "fileUrlPath": "dist/marginBlock.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -722,7 +722,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/marginInline.ts",
+          "fileUrlPath": "dist/marginInline.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -764,7 +764,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/paddingBlock.ts",
+          "fileUrlPath": "dist/paddingBlock.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4
@@ -838,7 +838,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/Styles.ts",
+          "fileUrlPath": "dist/Styles.d.ts",
           "releaseTag": "Public",
           "name": "Styles",
           "typeTokenRange": {
@@ -869,7 +869,7 @@
               "canonicalReference": "@emotion/utils!SerializedStyles:type"
             }
           ],
-          "fileUrlPath": "src/transitionDurationWithPrefersReducedMotion.ts",
+          "fileUrlPath": "dist/transitionDurationWithPrefersReducedMotion.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
             "endIndex": 4

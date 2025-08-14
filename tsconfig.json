@@ -1,14 +1,19 @@
 {
-  "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "include": [
     "*.js",
     "*.ts",
     "*.mjs",
     "src/**/*.ts*"
   ],
-
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "incremental": true,
+    "module": "esnext",
+    "moduleResolution": "Bundler",
     "outDir": "dist",
-    "moduleResolution": "Bundler"
+    "strict": true,
+    "target": "es2021"
   }
 }

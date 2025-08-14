@@ -9,7 +9,7 @@
     "reportFolder": "<projectFolder>/api-extractor"
   },
   "compiler": {
-    "tsconfigFilePath": "tsconfig-esm.json"
+    "tsconfigFilePath": "tsconfig-dist.json"
   },
   "docModel": {
     "enabled": true,
