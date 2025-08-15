@@ -15,14 +15,14 @@ const gridContainer = ({
   columns: number;
 } & (
   | {
-      columnGap?: string;
-      gap?: never;
-      rowGap?: string;
-    }
-  | {
       columnGap?: never;
       gap?: string;
       rowGap?: never;
+    }
+  | {
+      columnGap?: string;
+      gap?: never;
+      rowGap?: string;
     }
 )): SerializedStyles => {
   const resolvedColumnGap = columnGap ?? gap ?? 0;

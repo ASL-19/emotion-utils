@@ -8,17 +8,15 @@ import { CSSObject } from '@emotion/react';
 import { SerializedStyles } from '@emotion/react';
 
 // @public
-export const createBreakpointStyles: <Breakpoints extends {
-    [name: string]: number;
-}>({ breakpoints, }: {
+export const createBreakpointStyles: <Breakpoints extends Record<string, number>>({ breakpoints, }: {
     breakpoints: Breakpoints;
 }) => (args: { [Breakpoint in keyof Breakpoints]?: {
         gte: Styles;
-        lt?: Styles | undefined;
+        lt?: Styles;
     } | {
-        gte?: Styles | undefined;
+        gte?: Styles;
         lt: Styles;
-    } | undefined; }) => SerializedStyles;
+    }; }) => SerializedStyles;
 
 // @public
 export const devLabel: (label: string) => CSSObject | null;
@@ -27,13 +25,13 @@ export const devLabel: (label: string) => CSSObject | null;
 export const gridContainer: ({ columnGap, columns, gap, rowGap, }: {
     columns: number;
 } & ({
-    columnGap?: string | undefined;
-    gap?: undefined;
-    rowGap?: string | undefined;
+    columnGap?: never;
+    gap?: string;
+    rowGap?: never;
 } | {
-    columnGap?: undefined;
-    gap?: string | undefined;
-    rowGap?: undefined;
+    columnGap?: string;
+    gap?: never;
+    rowGap?: string;
 })) => SerializedStyles;
 
 // @public
@@ -63,7 +61,7 @@ export const invisible: SerializedStyles;
 // @public
 export const lineClampedText: ({ fontSize, height, lineCount, lineHeight, }: {
     fontSize: string;
-    height?: "auto" | "fixed" | undefined;
+    height?: "auto" | "fixed";
     lineCount: number;
     lineHeight: number;
 }) => SerializedStyles;
@@ -78,7 +76,7 @@ export const marginInline: (value: string) => SerializedStyles;
 export const paddingBlock: (value: string) => SerializedStyles;
 
 // @public
-export type Styles = SerializedStyles | CSSObject | Array<SerializedStyles | CSSObject>;
+export type Styles = Array<CSSObject | SerializedStyles> | CSSObject | SerializedStyles;
 
 // @public
 export const transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles;

@@ -6,30 +6,235 @@
 
 A collection of Emotion utility functions.
 
+## Functions
+
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createBreakpointStyles({ breakpoints, })](./emotion-utils.createbreakpointstyles.md)
+
+
+</td><td>
+
+Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints.
+
+
+</td></tr>
+<tr><td>
+
+[devLabel(label)](./emotion-utils.devlabel.md)
+
+
+</td><td>
+
+Returns `CSSObject` containing provided `label`<!-- -->, but only in development.
+
+
+</td></tr>
+<tr><td>
+
+[gridContainer({ columnGap, columns, gap, rowGap, })](./emotion-utils.gridcontainer.md)
+
+
+</td><td>
+
+Create grid container with provided `gap` (or separate `columnGap` and `rowGap` values).
+
+
+</td></tr>
+<tr><td>
+
+[hoverStyles(styles)](./emotion-utils.hoverstyles.md)
+
+
+</td><td>
+
+Apply provided styles on hover.
+
+
+</td></tr>
+<tr><td>
+
+[insetInlineEnd(value)](./emotion-utils.insetinlineend.md)
+
+
+</td><td>
+
+Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property.
+
+
+</td></tr>
+<tr><td>
+
+[insetInlineStart(value)](./emotion-utils.insetinlinestart.md)
+
+
+</td><td>
+
+Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property.
+
+
+</td></tr>
+<tr><td>
+
+[lineClampedText({ fontSize, height, lineCount, lineHeight, })](./emotion-utils.lineclampedtext.md)
+
+
+</td><td>
+
+Clamp with ellipsis when text extends past the provided number of lines.
+
+
+</td></tr>
+<tr><td>
+
+[marginBlock(value)](./emotion-utils.marginblock.md)
+
+
+</td><td>
+
+Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property.
+
+
+</td></tr>
+<tr><td>
+
+[marginInline(value)](./emotion-utils.margininline.md)
+
+
+</td><td>
+
+Equivalent to the [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline) CSS property.
+
+
+</td></tr>
+<tr><td>
+
+[paddingBlock(value)](./emotion-utils.paddingblock.md)
+
+
+</td><td>
+
+Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property.
+
+
+</td></tr>
+<tr><td>
+
+[transitionDurationWithPrefersReducedMotion(transitionDuration)](./emotion-utils.transitiondurationwithprefersreducedmotion.md)
+
+
+</td><td>
+
+Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion.
+
+
+</td></tr>
+</tbody></table>
+
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [createBreakpointStyles](./emotion-utils.createbreakpointstyles.md) | Create function that applies styles when viewport width is greater than or equal to and/or less than the specified breakpoints. |
-|  [devLabel](./emotion-utils.devlabel.md) | Returns <code>CSSObject</code> containing provided <code>label</code>, but only in development. |
-|  [gridContainer](./emotion-utils.gridcontainer.md) | Create grid container with provided <code>gap</code> (or separate <code>columnGap</code> and <code>rowGap</code> values). |
-|  [hiddenWhenJs](./emotion-utils.hiddenwhenjs.md) | Hide when JavaScript loaded. |
-|  [hiddenWhenNoJs](./emotion-utils.hiddenwhennojs.md) | Hide when JavaScript not loaded. |
-|  [hiddenWhenPointerCoarseOrNone](./emotion-utils.hiddenwhenpointercoarseornone.md) | Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is <code>coarse</code> or <code>none</code> (not <code>fine</code>). |
-|  [hiddenWhenPointerFine](./emotion-utils.hiddenwhenpointerfine.md) | Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is <code>fine</code> (not <code>coarse</code> or <code>none</code>). |
-|  [hoverStyles](./emotion-utils.hoverstyles.md) | Apply provided styles on hover. |
-|  [insetInlineEnd](./emotion-utils.insetinlineend.md) | Equivalent to the [inset-inline-end](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-end) CSS property. |
-|  [insetInlineStart](./emotion-utils.insetinlinestart.md) | Equivalent to the [inset-inline-start](https://developer.mozilla.org/en-US/docs/Web/CSS/inset-inline-start) CSS property. |
-|  [invisible](./emotion-utils.invisible.md) | Visually hide element while keeping it accessible to keyboard and screen reader navigation. |
-|  [lineClampedText](./emotion-utils.lineclampedtext.md) | Clamp with ellipsis when text extends past the provided number of lines. |
-|  [marginBlock](./emotion-utils.marginblock.md) | Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block) CSS property. |
-|  [marginInline](./emotion-utils.margininline.md) | Equivalent to the [margin-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-inline) CSS property. |
-|  [paddingBlock](./emotion-utils.paddingblock.md) | Equivalent to the [padding-block](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-block) CSS property. |
-|  [transitionDurationWithPrefersReducedMotion](./emotion-utils.transitiondurationwithprefersreducedmotion.md) | Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hiddenWhenJs](./emotion-utils.hiddenwhenjs.md)
+
+
+</td><td>
+
+Hide when JavaScript loaded.
+
+
+</td></tr>
+<tr><td>
+
+[hiddenWhenNoJs](./emotion-utils.hiddenwhennojs.md)
+
+
+</td><td>
+
+Hide when JavaScript not loaded.
+
+
+</td></tr>
+<tr><td>
+
+[hiddenWhenPointerCoarseOrNone](./emotion-utils.hiddenwhenpointercoarseornone.md)
+
+
+</td><td>
+
+Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is `coarse` or `none` (not `fine`<!-- -->).
+
+
+</td></tr>
+<tr><td>
+
+[hiddenWhenPointerFine](./emotion-utils.hiddenwhenpointerfine.md)
+
+
+</td><td>
+
+Hide when [pointer media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer) is `fine` (not `coarse` or `none`<!-- -->).
+
+
+</td></tr>
+<tr><td>
+
+[invisible](./emotion-utils.invisible.md)
+
+
+</td><td>
+
+Visually hide element while keeping it accessible to keyboard and screen reader navigation.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Styles](./emotion-utils.styles.md) | Emotion <code>CSSObject</code> or <code>SerializedStyles</code> (or array containing them). |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Styles](./emotion-utils.styles.md)
+
+
+</td><td>
+
+Emotion `CSSObject` or `SerializedStyles` (or array containing them).
+
+
+</td></tr>
+</tbody></table>
 

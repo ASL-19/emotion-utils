@@ -12,11 +12,7 @@ import Styles from "./Styles";
  *
  * @public
  */
-const createBreakpointStyles = <
-  Breakpoints extends {
-    [name: string]: number;
-  },
->({
+const createBreakpointStyles = <Breakpoints extends Record<string, number>>({
   breakpoints,
 }: {
   breakpoints: Breakpoints;

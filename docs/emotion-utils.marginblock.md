@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [marginBlock](./emotion-utils.marginblock.md)
 
-## marginBlock variable
+## marginBlock() function
 
 > Warning: This API is now obsolete.
 > 
@@ -16,3 +16,42 @@ Equivalent to the [margin-block](https://developer.mozilla.org/en-US/docs/Web/CS
 ```typescript
 marginBlock: (value: string) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+SerializedStyles
+

@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [transitionDurationWithPrefersReducedMotion](./emotion-utils.transitiondurationwithprefersreducedmotion.md)
 
-## transitionDurationWithPrefersReducedMotion variable
+## transitionDurationWithPrefersReducedMotion() function
 
 Set a transition duration with override to 0 if the user has enabled an OS/browser setting to request sites to reduce motion.
 
@@ -11,3 +11,42 @@ Set a transition duration with override to 0 if the user has enabled an OS/brows
 ```typescript
 transitionDurationWithPrefersReducedMotion: (transitionDuration: string) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+transitionDuration
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+SerializedStyles
+

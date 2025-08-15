@@ -18,8 +18,8 @@ import { CSSObject, SerializedStyles } from "@emotion/react";
  * @public
  */
 type Styles =
-  | SerializedStyles
+  | Array<CSSObject | SerializedStyles>
   | CSSObject
-  | Array<SerializedStyles | CSSObject>;
+  | SerializedStyles;
 
 export default Styles;
