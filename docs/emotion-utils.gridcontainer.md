@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/emotion-utils](./emotion-utils.md) &gt; [gridContainer](./emotion-utils.gridcontainer.md)
 
-## gridContainer variable
+## gridContainer() function
 
 Create grid container with provided `gap` (or separate `columnGap` and `rowGap` values).
 
@@ -12,12 +12,51 @@ Create grid container with provided `gap` (or separate `columnGap` and `rowGap` 
 gridContainer: ({ columnGap, columns, gap, rowGap, }: {
     columns: number;
 } & ({
-    columnGap?: string | undefined;
-    gap?: undefined;
-    rowGap?: string | undefined;
+    columnGap?: never;
+    gap?: string;
+    rowGap?: never;
 } | {
-    columnGap?: undefined;
-    gap?: string | undefined;
-    rowGap?: undefined;
+    columnGap?: string;
+    gap?: never;
+    rowGap?: string;
 })) => SerializedStyles
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ columnGap, columns, gap, rowGap, }
+
+
+</td><td>
+
+{ columns: number; } &amp; ({ columnGap?: never; gap?: string; rowGap?: never; } \| { columnGap?: string; gap?: never; rowGap?: string; })
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+SerializedStyles
+

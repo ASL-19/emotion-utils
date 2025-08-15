@@ -3,6 +3,7 @@
     "csstype",
     "destructure",
     "heaslip",
+    "packagehash",
     "rushstack",
     "stylelint",
     "transpiled",
@@ -33,8 +34,7 @@
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
-    "package-lock.json": true,
-    "types/**/*": true
+    "package-lock.json": true
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "[javascript][json][jsonc][markdown][typescript][yaml]": {
