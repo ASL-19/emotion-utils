@@ -1,5 +1,9 @@
 # @asl-19/emotion-utils changelog
 
+## [1.0.0](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A1.0.0+is%3Apr) [2025-08-15]
+
+- Migrate to ESM [[#33](https://github.com/ASL-19/emotion-utils/pull/33)]
+
 ## [0.6.2](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A0.6.2+is%3Apr) [2024-01-25]
 
 ### Changes
