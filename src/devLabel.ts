@@ -1,5 +1,9 @@
 import { CSSObject } from "@emotion/react";
 
+// Library code is checked without Node types, but bundlers replace
+// process.env.NODE_ENV at build time
+declare const process: { env: { NODE_ENV?: string } };
+
 /**
  * Returns `CSSObject` containing provided `label`, but only in development.
  *

@@ -1,13 +1,15 @@
 {
   "cSpell.words": [
+    "attw",
     "csstype",
     "destructure",
+    "EBADDEVENGINES",
     "heaslip",
-    "packagehash",
-    "rushstack",
+    "pinact",
     "stylelint",
     "transpiled",
     "tsdoc",
+    "typedoc",
     "unscoped",
     "yalc"
   ],
@@ -18,9 +20,6 @@
     "javascript",
     "typescript"
   ],
-  "files.associations": {
-    "api-extractor.json": "jsonc"
-  },
   "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
@@ -30,13 +29,15 @@
   "rewrap.reformat": true,
   "rewrap.wrappingColumn": 80,
   "search.exclude": {
-    "api-extractor/**/*": true,
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
     "package-lock.json": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
+  "testing.openTesting": "neverOpen",
+  "testing.automaticallyOpenTestResults": "neverOpen",
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
   "[javascript][json][jsonc][markdown][typescript][yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true

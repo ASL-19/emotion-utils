@@ -13,6 +13,19 @@ const eslintConfig = defineConfig([
       "security/detect-object-injection": "off",
     },
   },
+  {
+    // Deprecated utilities are still exported (and tested) until they’re
+    // removed
+    files: [
+      "src/index.ts",
+      "src/insetInline{End,Start}.ts",
+      "src/{margin,padding}{Block,Inline}.ts",
+      "src/logicalProperties.test.ts",
+    ],
+    rules: {
+      "@typescript-eslint/no-deprecated": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

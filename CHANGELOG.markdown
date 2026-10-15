@@ -1,5 +1,21 @@
 # @asl-19/emotion-utils changelog
 
+## Unreleased
+
+- Fix `Styles` imports in `createBreakpointStyles` and `hoverStyles` type declarations missing their `.js` extension, which broke type resolution for consumers using `moduleResolution: "nodenext"`
+
+Development tooling:
+
+- Replace API Extractor and API Documenter with TypeDoc
+- Add Vitest tests for each utility
+- Remove package-changed and npm-check-updates, and add `outdated` scripts
+- Add publint, Are the Types Wrong? (`attw`) and a docs freshness check to `lint-test`
+- Manage Node.js 24 and pinact with mise
+- Add npm supply-chain gates (`.npmrc`, `devEngines`, `allowScripts`)
+- Update TypeScript to 6.0, ESLint to 10, @asl-19/eslint-config to 1.0 and Prettier to 3.9, and compile with `module: "nodenext"`
+- Pin GitHub Actions to commit SHAs, limit the workflow token to read-only, and run CI on pull requests
+- Add agent instructions (`AGENTS.md`) and Claude Code permission settings
+
 ## [1.0.0](https://github.com/ASL-19/emotion-utils/pulls?q=is%3Aclosed+milestone%3A1.0.0+is%3Apr) [2025-08-15]
 
 - Migrate to ESM [[#33](https://github.com/ASL-19/emotion-utils/pull/33)]

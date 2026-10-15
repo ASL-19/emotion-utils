@@ -1,6 +1,6 @@
 import { css, SerializedStyles } from "@emotion/react";
 
-import Styles from "./Styles";
+import Styles from "./Styles.js";
 
 /**
  * Create function that applies styles when viewport width is greater than or
@@ -39,7 +39,8 @@ const createBreakpointStyles = <Breakpoints extends Record<string, number>>({
     css(
       (Object.keys(args) as Array<keyof Breakpoints>).map((breakpoint) => {
         const breakpointGteAndOrLtStyles = args[breakpoint];
-        const breakpointViewportWidth = breakpoints[breakpoint];
+        const breakpointViewportWidth = breakpoints[breakpoint] as
+          number | undefined;
 
         // This should only happen if called with an unknown breakpoint
         // (causing type checking to fail)
