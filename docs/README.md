@@ -30,4 +30,5 @@ A collection of Emotion utility functions.
 - [~~marginBlock~~](functions/marginBlock.md)
 - [~~marginInline~~](functions/marginInline.md)
 - [~~paddingBlock~~](functions/paddingBlock.md)
+- [~~paddingInline~~](functions/paddingInline.md)
 - [transitionDurationWithPrefersReducedMotion](functions/transitionDurationWithPrefersReducedMotion.md)

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Export `paddingInline`, which was accidentally removed from the package’s exports in 0.5.0
 - Fix `Styles` imports in `createBreakpointStyles` and `hoverStyles` type declarations missing their `.js` extension, which broke type resolution for consumers using `moduleResolution: "nodenext"`
 
 Development tooling:
