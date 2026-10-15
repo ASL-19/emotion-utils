@@ -1,6 +1,6 @@
 import { css, SerializedStyles } from "@emotion/react";
 
-import Styles from "./Styles";
+import Styles from "./Styles.js";
 
 /**
  * Apply provided styles on hover.
