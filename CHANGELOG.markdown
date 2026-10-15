@@ -1,6 +1,6 @@
 # @asl-19/emotion-utils changelog
 
-## Unreleased
+## 1.1.0 [2026-10-15]
 
 - Export `paddingInline`, which was accidentally removed from the package’s exports in 0.5.0
 - Fix `Styles` imports in `createBreakpointStyles` and `hoverStyles` type declarations missing their `.js` extension, which broke type resolution for consumers using `moduleResolution: "nodenext"`
